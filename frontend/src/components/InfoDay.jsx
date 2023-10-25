@@ -1,4 +1,3 @@
-InfoDay
 function InfoDay() {
   return (
     <div className="container-info-day">

@@ -1,5 +1,5 @@
 import { AiOutlineInfo } from "react-icons/ai";
-import { BsFillGearFill } from "react-icons/bs"; 
+import { BsFillGearFill } from "react-icons/bs";
 import { useState } from "react";
 import InfoCharacter from "./InfoCharacter";
 import InfoDay from "./InfoDay";
@@ -34,11 +34,11 @@ function Game() {
             <p>lorem</p>
           </div>
         )}
-        <h1 className="container-game-h1" onClick={toggleInfo}>
-          HOGWARTS DAY
-        </h1>
-        <a href="">
-          <button className="container-game-button">Lancer la partie</button>
+        <h1 className="container-game-h1">HOGWARTS DAY</h1>
+        <a href="/">
+          <button type="button" className="container-game-button">
+            Lancer la partie
+          </button>
         </a>
         {info && (
           <div>
