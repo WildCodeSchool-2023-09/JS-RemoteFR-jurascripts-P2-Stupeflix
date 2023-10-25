@@ -5,6 +5,9 @@ function App() {
   return (
     <div className="App">
      <Game />
+      <header className="App-header">
+       <Header />
+      </header>
     </div>
   );
 }
