@@ -5,12 +5,12 @@ import InfoCharacter from "./InfoCharacter";
 import InfoDay from "./InfoDay";
 
 function Game() {
-  const [info, setInfo] = useState(true);
+  const [info, setInfo] = useState(false);
   const toggleInfo = () => {
     setInfo(!info);
   };
 
-  const [params, setParams] = useState(true);
+  const [params, setParams] = useState(false);
   const toggleParams = () => {
     setParams(!params);
   };
@@ -28,7 +28,7 @@ function Game() {
         {params && (
           <div className="container-params-info">
             <h3>Paramètres</h3>
-            <p>Volume de la music: 10/10</p>
+            <p>Volume de la musique: 10/10</p>
             <p>Volume des voix des personnages: 10/10</p>
             <p>lorem</p>
             <p>lorem</p>
