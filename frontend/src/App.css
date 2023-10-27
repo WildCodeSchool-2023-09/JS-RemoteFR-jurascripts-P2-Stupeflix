@@ -1,0 +1,163 @@
+#root {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(2, 2, 28);
+}
+
+/* -----------------------------------NAV BAR----------------------------------- */
+
+.container-nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(47, 17, 17);
+  border: 0.2rem black solid;
+}
+
+.container-nav-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.container-nav-li {
+  list-style-type: none;
+}
+
+.container-nav-a {
+  text-decoration: none;
+  color: white;
+}
+
+/* -----------------------------------GAME----------------------------------- */
+
+.container-game-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  z-index: 0;
+}
+
+.container-game {
+  width: 90%;
+  height: 90vh;
+  border: 0.2rem solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://offloadmedia.feverup.com/parissecret.com/wp-content/uploads/2022/02/12044721/COUV-ARTICLES-1920x1080-38-1024x576.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.container-game-h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  font-family:
+    Apple Chancery,
+    cursive;
+  text-shadow: 16px 22px 11px rgba(185, 185, 185, 0.8);
+}
+
+.container-game-button {
+  padding: 0.5rem 3rem;
+  box-shadow: 0rem 0rem 0.2rem 0.1rem;
+}
+
+/* -----------------------------------INFO----------------------------------- */
+
+.container-info {
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  color: white;
+}
+
+/* ---------------------------------INFO DAY--------------------------------- */
+
+.container-info-day {
+  position: absolute;
+  left: 12%;
+  bottom: 10%;
+  border: 0.2rem rgb(110, 110, 110) solid;
+  padding: 0.5rem 2rem;
+}
+
+.container-info-day-h3 {
+  font-size: 1rem;
+}
+
+.container-info-day-p {
+  font-size: 0.8rem;
+}
+
+/* ------------------------------INFO CHARACTER------------------------------ */
+
+.container-info-character {
+  position: absolute;
+  right: 12%;
+  bottom: 10%;
+  border: 0.2rem rgb(110, 110, 110) solid;
+  padding: 0.5rem 2rem;
+}
+
+.container-info-character-h3 {
+  font-size: 1rem;
+}
+
+.container-info-character-p {
+  font-size: 0.8rem;
+}
+
+/* --------------------------------INFO ICONS-------------------------------- */
+
+.container-icons {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container-icon-i {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0.5rem;
+  background-color: rgb(196, 196, 196);
+  border-radius: 10rem;
+}
+
+.container-icon-gear {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0.5rem;
+  background-color: rgb(196, 196, 196);
+  border-radius: 10rem;
+}
+
+.container-params-info {
+  color: white;
+  position: absolute;
+  top: 18%;
+  right: 7%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  box-shadow: rgba(227, 227, 227, 0.15) 2.4px 2.4px 3.2px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
