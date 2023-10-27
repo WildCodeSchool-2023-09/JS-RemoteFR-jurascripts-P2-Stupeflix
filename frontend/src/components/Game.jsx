@@ -30,8 +30,6 @@ function Game() {
             <h3>Paramètres</h3>
             <p>Volume de la musique: 10/10</p>
             <p>Volume des voix des personnages: 10/10</p>
-            <p>lorem</p>
-            <p>lorem</p>
           </div>
         )}
         <h1 className="container-game-h1">HOGWARTS DAY</h1>
