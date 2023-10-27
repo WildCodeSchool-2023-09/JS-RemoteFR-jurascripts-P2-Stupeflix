@@ -47,7 +47,7 @@ body {
 
 .container-game {
   width: 90%;
-  height: 70vh;
+  height: 90vh;
   border: 0.2rem solid black;
   display: flex;
   justify-content: center;
@@ -83,8 +83,8 @@ body {
 
 .container-info-day {
   position: absolute;
-  left: 10rem;
-  bottom: 5rem;
+  left: 12%;
+  bottom: 10%;
   border: 0.2rem black solid;
   padding: 0.5rem 2rem;
 }
@@ -101,8 +101,8 @@ body {
 
 .container-info-character {
   position: absolute;
-  right: 10rem;
-  bottom: 5rem;
+  right: 12%;
+  bottom: 10%;
   border: 0.2rem black solid;
   padding: 0.5rem 2rem;
 }
@@ -144,8 +144,8 @@ body {
 
 .container-params-info {
   position: absolute;
-  top: 10rem;
-  right: 8rem;
+  top: 18%;
+  right: 7%;
   z-index: 10;
   display: flex;
   flex-direction: column;
