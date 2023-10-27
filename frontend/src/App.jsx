@@ -1,10 +1,7 @@
 import "./App.css";
 
 function App() {
-  return (
-    <>
-    </>
-  );
+  return <p>Hogwarts Day</p>;
 }
 
 export default App;
