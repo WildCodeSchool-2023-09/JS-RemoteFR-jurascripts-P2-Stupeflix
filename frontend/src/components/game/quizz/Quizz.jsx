@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import "../../../styles/Quizz.scss";
 
-function Quizz({ data, questionNumber, setQuestionNumber, setTimeOut }) {
+function Quizz({ data, questionNumber, setQuestionNumber }) {
   const [question, setQuestion] = useState(null);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [className, setClassName] = useState("answer");
@@ -18,25 +18,21 @@ function Quizz({ data, questionNumber, setQuestionNumber, setTimeOut }) {
     setClassName("answer active");
     setTimeout(() => {
       setClassName(a.correct ? "answer correct" : "answer wrong");
-    }, 1000);
+    }, 500);
     setTimeout(() => {
       setScore(a.correct ? score + 1 : score);
-    }, 1000);
+    }, 800);
 
     setTimeout(() => {
       if (questionNumber + 1 <= 5) {
         setTimeout(() => {
           setQuestionNumber((prev) => prev + 1);
           setSelectedAnswer(null);
-        }, 1000);
+        }, 500);
       } else {
         setShowResults(true);
       }
-
-      setTimeout(() => {
-        setTimeOut(true);
-      }, 1000);
-    }, 1000);
+    }, 1500);
   };
   return (
     <div className="quizz">
@@ -80,7 +76,6 @@ Quizz.propTypes = {
   data: PropTypes.arrayOf.isRequired,
   questionNumber: PropTypes.number.isRequired,
   setQuestionNumber: PropTypes.func.isRequired,
-  setTimeOut: PropTypes.func.isRequired,
 };
 
 export default Quizz;
