@@ -1,10 +1,10 @@
 import { AiOutlineInfo } from "react-icons/ai";
 import { BsFillGearFill } from "react-icons/bs";
 import { useState } from "react";
-import InfoCharacter from "./InfoCharacter";
-import InfoDay from "./InfoDay";
+import Informations from "./hud/Informations";
+import Params from "./hud/Params";
 
-function Game() {
+function DisplayGame() {
   const [info, setInfo] = useState(false);
   const toggleInfo = () => {
     setInfo(!info);
@@ -41,8 +41,8 @@ function Game() {
         {info && (
           <div>
             <div className="container-info">
-              <InfoDay />
-              <InfoCharacter />
+              <Informations />
+              <Params />
             </div>
           </div>
         )}
@@ -51,4 +51,4 @@ function Game() {
   );
 }
 
-export default Game;
+export default DisplayGame;
