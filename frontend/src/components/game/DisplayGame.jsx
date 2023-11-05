@@ -19,7 +19,7 @@ function DisplayGame() {
   const [questionNumber, setQuestionNumber] = useState(1);
 
   return (
-    <div className="container-game-parent">
+    <>
       <div className="container-game">
         <div className="container-icons">
           <AiOutlineInfo className="container-icon-i" onClick={toggleInfo} />
@@ -50,6 +50,7 @@ function DisplayGame() {
           </div>
         )}
       </div>
+
       <div className="main">
         <Quizz
           data={questions}
@@ -57,7 +58,7 @@ function DisplayGame() {
           setQuestionNumber={setQuestionNumber}
         />
       </div>
-    </div>
+    </>
   );
 }
 
