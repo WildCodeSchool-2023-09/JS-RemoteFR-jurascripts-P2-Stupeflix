@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
+import "../../../styles/Quizz.scss";
 
 function Quizz({ data, questionNumber, setQuestionNumber, setTimeOut }) {
   const [question, setQuestion] = useState(null);
@@ -43,7 +44,7 @@ function Quizz({ data, questionNumber, setQuestionNumber, setTimeOut }) {
       {showResults ? (
         <div className="final-result">
           <h1>Score Final</h1>
-          <h2>Votre score est de {score} points</h2>
+          <h2>Votre score est de {score} point(s)</h2>
           <p>Ce score sera ajouté aux stats de vos personnages.</p>
         </div>
       ) : (
