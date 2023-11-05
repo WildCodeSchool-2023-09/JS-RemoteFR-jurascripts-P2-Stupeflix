@@ -3,6 +3,8 @@ import { BsFillGearFill } from "react-icons/bs";
 import { useState } from "react";
 import Informations from "./hud/Informations";
 import Params from "./hud/Params";
+import Quizz from "./quizz/Quizz";
+import questions from "./quizz/Questions";
 
 function DisplayGame() {
   const [info, setInfo] = useState(false);
@@ -14,6 +16,7 @@ function DisplayGame() {
   const toggleParams = () => {
     setParams(!params);
   };
+  const [questionNumber, setQuestionNumber] = useState(1);
 
   return (
     <div className="container-game-parent">
@@ -46,6 +49,13 @@ function DisplayGame() {
             </div>
           </div>
         )}
+      </div>
+      <div className="main">
+        <Quizz
+          data={questions}
+          questionNumber={questionNumber}
+          setQuestionNumber={setQuestionNumber}
+        />
       </div>
     </div>
   );
