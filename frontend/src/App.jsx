@@ -1,4 +1,4 @@
-import "./styles/App.css";
+import "./styles/App.scss";
 import DisplayGame from "./components/game/DisplayGame";
 
 function App() {
