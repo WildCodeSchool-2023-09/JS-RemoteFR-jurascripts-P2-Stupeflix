@@ -30,9 +30,7 @@ function DisplayGame() {
         </div>
         {params && (
           <div className="container-params-info">
-            <h3>Paramètres</h3>
-            <p>Volume de la musique: 10/10</p>
-            <p>Volume des voix des personnages: 10/10</p>
+            <Params />
           </div>
         )}
         <h1 className="container-game-h1">HOGWARTS DAY</h1>
@@ -42,11 +40,8 @@ function DisplayGame() {
           </button>
         </a>
         {info && (
-          <div>
-            <div className="container-info">
-              <Informations />
-              <Params />
-            </div>
+          <div className="container-info">
+            <Informations />
           </div>
         )}
       </div>

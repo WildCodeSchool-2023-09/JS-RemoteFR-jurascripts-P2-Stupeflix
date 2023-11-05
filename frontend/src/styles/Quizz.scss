@@ -4,12 +4,18 @@
   display: flex;
   flex-direction: column;
 }
+
 .imageQ {
   width: 350px;
   height: 250px;
 }
 .quizz {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.question-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,7 +81,7 @@
   50% {
     background: mediumblue;
   }
-  51%,
+  50%,
   100% {
     background: crimson;
   }
