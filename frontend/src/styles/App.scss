@@ -5,33 +5,7 @@
 
 body {
   margin: 0;
-  background-color: rgb(2, 2, 28);
-}
-
-/* -----------------------------------NAV BAR----------------------------------- */
-
-.container-nav {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  background-color: rgb(47, 17, 17);
-  border: 0.2rem black solid;
-}
-
-.container-nav-ul {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-
-.container-nav-li {
-  list-style-type: none;
-}
-
-.container-nav-a {
-  text-decoration: none;
-  color: white;
+  background-color: rgb(99, 99, 164);
 }
 
 /* -----------------------------------GAME----------------------------------- */
@@ -53,6 +27,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: -1rem;
+  margin-bottom: 3rem;
   background-image: url(https://offloadmedia.feverup.com/parissecret.com/wp-content/uploads/2022/02/12044721/COUV-ARTICLES-1920x1080-38-1024x576.png);
   background-repeat: no-repeat;
   background-size: cover;
