@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 import Quizz from "./Quizz";
 import questions from "./Questions";
@@ -17,5 +18,8 @@ function DisplayQuizz({ setPage }) {
     </div>
   );
 }
+DisplayQuizz.propTypes = {
+  setPage: PropTypes.func.isRequired,
+};
 
 export default DisplayQuizz;
