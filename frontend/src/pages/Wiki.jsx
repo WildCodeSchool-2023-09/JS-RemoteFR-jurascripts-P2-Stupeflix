@@ -4,6 +4,7 @@ import CardListWiki from "../components/wiki/CardListWiki";
 import NavBar from "../components/NavBar";
 import "../styles/Wiki.scss";
 
+
 function Wiki() {
   const [character, setCharacter] = useState([]);
 
@@ -20,6 +21,7 @@ function Wiki() {
       <div className="wiki-box">
         <CardListWiki character={character} />
       </div>
+
     </>
   );
 }
