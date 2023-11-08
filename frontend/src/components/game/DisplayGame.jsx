@@ -34,7 +34,7 @@ function DisplayGame({ setPage }) {
 
       <button
         type="button"
-        onClick={() => setPage({ name: "DisplayQuizz", id: null })}
+        onClick={() => setPage({ name: "DisplayCharact", id: null })}
         className="container-game-button"
       >
         Lancer la partie
