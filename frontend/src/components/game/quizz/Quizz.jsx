@@ -73,7 +73,21 @@ function Quizz({ data, questionNumber, setQuestionNumber }) {
 }
 
 Quizz.propTypes = {
-  data: PropTypes.arrayOf.isRequired,
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      img: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired,
+      options: PropTypes.arrayOf(
+        PropTypes.shape({
+          id: PropTypes.number.isRequired,
+          text: PropTypes.string.isRequired,
+          correct: PropTypes.bool.isRequired,
+        })
+      ).isRequired,
+      difficult: PropTypes.number,
+    })
+  ).isRequired,
   questionNumber: PropTypes.number.isRequired,
   setQuestionNumber: PropTypes.func.isRequired,
 };
