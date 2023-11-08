@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import "../../../styles/Quizz.scss";
 
-function Quizz({ data, questionNumber, setQuestionNumber }) {
+function Quizz({ data, questionNumber, setQuestionNumber, setPage }) {
   const [question, setQuestion] = useState(null);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [className, setClassName] = useState("answer");
@@ -42,6 +42,12 @@ function Quizz({ data, questionNumber, setQuestionNumber }) {
           <h1>Score Final</h1>
           <h2>Votre score est de {score} point(s)</h2>
           <p>Ce score sera ajouté aux stats de vos personnages.</p>
+          <button
+            type="button"
+            onClick={() => setPage({ name: "DisplayFight", id: null })}
+          >
+            Aller au combat
+          </button>
         </div>
       ) : (
         <div className="question-container">
@@ -90,6 +96,7 @@ Quizz.propTypes = {
   ).isRequired,
   questionNumber: PropTypes.number.isRequired,
   setQuestionNumber: PropTypes.func.isRequired,
+  setPage: PropTypes.func.isRequired,
 };
 
 export default Quizz;
