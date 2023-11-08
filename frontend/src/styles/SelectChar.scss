@@ -1,0 +1,38 @@
+.select-char {
+  color: white;
+}
+
+.container-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.container-select-img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.container-select-1:hover {
+  background-color: rgb(176, 176, 176);
+  padding: 0.5rem 1rem;
+}
+
+.container-select-2:hover {
+  background-color: rgb(176, 176, 176);
+  padding: 0.5rem 1rem;
+}
+
+.container-select-3:hover {
+  background-color: rgb(176, 176, 176);
+  padding: 0.5rem 1rem;
+}
+
+.container-select-4:hover {
+  background-color: rgb(176, 176, 176);
+  padding: 0.5rem 1rem;
+}
