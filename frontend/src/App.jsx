@@ -1,10 +1,10 @@
 import "./styles/App.scss";
-import DisplayGame from "./components/game/DisplayGame";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div className="App">
-      <DisplayGame />
+    <div className="navbar">
+      <NavBar />
     </div>
   );
 }
