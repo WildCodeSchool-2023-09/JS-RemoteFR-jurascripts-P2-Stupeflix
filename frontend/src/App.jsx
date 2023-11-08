@@ -9,13 +9,15 @@ import DisplayCharact from "./components/game/character/DisplayCharact";
 function App() {
   const [page, setPage] = useState({ name: "DisplayGame", id: null });
   return (
-    <div className="App">
+    <>
       <NavBar />
-      {page.name === "DisplayGame" && <DisplayGame setPage={setPage} />}
-      {page.name === "DisplayCharact" && <DisplayCharact setPage={setPage} />}
-      {page.name === "DisplayQuizz" && <DisplayQuizz setPage={setPage} />}
-      {page.name === "DisplayFight" && <DisplayFight />}
-    </div>
+      <div className="App">
+        {page.name === "DisplayGame" && <DisplayGame setPage={setPage} />}
+        {page.name === "DisplayCharact" && <DisplayCharact setPage={setPage} />}
+        {page.name === "DisplayQuizz" && <DisplayQuizz setPage={setPage} />}
+        {page.name === "DisplayFight" && <DisplayFight />}
+      </div>
+    </>
   );
 }
 
