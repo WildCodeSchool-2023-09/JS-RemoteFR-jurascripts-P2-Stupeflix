@@ -40,13 +40,15 @@ function DisplayQuizz({ setPage }) {
           <Informations />
         </div>
       )}
-      <div className="main">
-        <Quizz
-          data={questions}
-          questionNumber={questionNumber}
-          setQuestionNumber={setQuestionNumber}
-          setPage={setPage}
-        />
+      <div className="container-game">
+        <div className="main">
+          <Quizz
+            data={questions}
+            questionNumber={questionNumber}
+            setQuestionNumber={setQuestionNumber}
+            setPage={setPage}
+          />
+        </div>
       </div>
     </div>
   );

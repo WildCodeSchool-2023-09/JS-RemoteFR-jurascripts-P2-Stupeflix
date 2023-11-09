@@ -1,88 +1,40 @@
-.select-char {
-  color: white;
-}
-
 .container-select {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 8rem;
   text-align: center;
 }
 
 .container-select-img {
-  height: 10rem;
+  height: 12rem;
   width: 10rem;
   margin-bottom: 2rem;
 }
 
 .container-button {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(139, 69, 19, 1) 50%,
-    rgba(4, 4, 4, 1) 100%
-  );
-  color: white;
+  background-color: var(--color2);
+  color: black;
   padding: 0.3rem 1.5rem;
   border: 0rem;
   border-radius: 0.5rem;
   cursor: pointer;
+  border-bottom: 0.15rem solid var(--color3);
+}
+
+.container-button:hover {
+  background-color: var(--color3);
+  color: var(--color2);
+  border-bottom: 0.1rem solid black;
 }
 
 .container-select-1 {
-  margin: 1rem;
-  padding: 3rem 0.3rem;
-  background: rgb(2, 0, 36);
+  width: 13.5%;
+  padding: 2rem;
+  border: 1px solid var(--color2);
   background: linear-gradient(
-    90deg,
-    rgb(230, 230, 230) 0%,
-    rgb(151, 233, 173) 50%,
-    rgb(230, 230, 230) 100%
-  );
-  border-radius: 0.7rem;
-  transition: background-color 1s;
-}
-
-.container-select-2 {
-  margin: 1rem;
-  padding: 3rem 0.3rem;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgb(230, 230, 230) 0%,
-    rgb(151, 233, 173) 50%,
-    rgb(230, 230, 230) 100%
-  );
-  border-radius: 0.7rem;
-  transition: background-color 1s;
-}
-
-.container-select-3 {
-  margin: 1rem;
-  padding: 3rem 0.3rem;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgb(230, 230, 230) 0%,
-    rgb(151, 233, 173) 50%,
-    rgb(230, 230, 230) 100%
-  );
-  border-radius: 0.7rem;
-  transition: background-color 1s;
-}
-
-.container-select-4 {
-  margin: 1rem;
-  padding: 3rem 0.3rem;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgb(230, 230, 230) 0%,
-    rgb(151, 233, 173) 50%,
-    rgb(230, 230, 230) 100%
+    180deg,
+    rgba(139, 69, 19, 1) 0%,
+    rgba(4, 4, 4, 1) 150%
   );
   border-radius: 0.7rem;
   transition: background-color 1s;
