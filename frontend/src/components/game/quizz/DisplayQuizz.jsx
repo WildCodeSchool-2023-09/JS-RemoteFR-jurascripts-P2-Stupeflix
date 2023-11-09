@@ -19,7 +19,7 @@ function DisplayQuizz({ setPage }) {
     setParams(!params);
   };
 
-  const [questionNumber, setQuestionNumber] = useState(1);
+  const [questionNumber, setQuestionNumber] = useState(questions[0].id);
 
   return (
     <div>

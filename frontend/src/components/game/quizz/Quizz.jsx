@@ -8,10 +8,15 @@ function Quizz({ data, questionNumber, setQuestionNumber, setPage }) {
   const [className, setClassName] = useState("answer");
   const [score, setScore] = useState(0);
   const [showResults, setShowResults] = useState(false);
+  const [numberOfQuestion, setNumberOfQuestion] = useState(1);
 
   useEffect(() => {
     setQuestion(data[questionNumber - 1]);
   }, [data, questionNumber]);
+
+  const handleNumberOfQuestion = () => {
+    setNumberOfQuestion(numberOfQuestion + 1);
+  };
 
   const handleClick = (a) => {
     setSelectedAnswer(a);
@@ -24,9 +29,10 @@ function Quizz({ data, questionNumber, setQuestionNumber, setPage }) {
     }, 800);
 
     setTimeout(() => {
-      if (questionNumber + 1 <= 5) {
+      if (numberOfQuestion < 5) {
         setTimeout(() => {
-          setQuestionNumber((prev) => prev + 1);
+          setQuestionNumber(() => Math.floor(Math.random() * data.length) + 1);
+          handleNumberOfQuestion();
           setSelectedAnswer(null);
         }, 500);
       } else {
@@ -36,22 +42,23 @@ function Quizz({ data, questionNumber, setQuestionNumber, setPage }) {
   };
   return (
     <div className="quizz">
-      <h1>Quizz Selectif</h1>
       {showResults ? (
         <div className="final-result">
-          <h1>Score Final</h1>
-          <h2>Votre score est de {score} point(s)</h2>
-          <p>Ce score sera ajouté aux stats de vos personnages.</p>
+          <h1 className="harry-potter-font">Score Final</h1>
+          <h3>Votre score est de {score} point(s)</h3>
           <button
             type="button"
             onClick={() => setPage({ name: "DisplayFight", id: null })}
+            className="harry-potter-font"
           >
-            Aller au combat
+            Fight
           </button>
+          <p>Ce score sera ajouté aux stats de vos personnages.</p>
         </div>
       ) : (
         <div className="question-container">
-          <h2>Score: {score}</h2>
+          <h1 className="harry-potter-font">Quizz Selectif</h1>
+          <h2>{score}Pts</h2>
           <div className="question">{question?.text}</div>
           <picture>
             <img

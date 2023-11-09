@@ -19,6 +19,16 @@ function CardListWiki({ character }) {
   );
 }
 CardListWiki.propTypes = {
-  character: PropTypes.arrayOf.isRequired,
+  character: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      house: PropTypes.string.isRequired,
+      gender: PropTypes.string.isRequired,
+      species: PropTypes.string.isRequired,
+      dateOfBirth: PropTypes.string,
+    })
+  ).isRequired,
 };
 export default CardListWiki;

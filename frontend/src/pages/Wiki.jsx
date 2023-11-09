@@ -13,12 +13,12 @@ function Wiki() {
 
       .then((res) => setCharacter(res.data));
   }, []);
-
+  const showCharacter = character.slice(0, 24);
   return (
     <>
       <NavBar />
       <div className="wiki-box">
-        <CardListWiki character={character} />
+        <CardListWiki character={showCharacter} />
       </div>
     </>
   );

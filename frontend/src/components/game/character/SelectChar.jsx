@@ -31,7 +31,7 @@ function SelectChar({ setPage }) {
               type="button"
               onClick={() => setPage({ name: "DisplayQuizz", id: null })}
             >
-              Luna Lovelace
+              Luna Lovegood
             </button>
           </div>
           <div className="container-select-3">
