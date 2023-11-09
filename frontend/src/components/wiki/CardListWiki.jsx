@@ -21,7 +21,7 @@ function CardListWiki({ character }) {
 CardListWiki.propTypes = {
   character: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
       house: PropTypes.string.isRequired,

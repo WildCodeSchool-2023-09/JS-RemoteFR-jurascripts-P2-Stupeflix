@@ -22,7 +22,11 @@ CardWiki.propTypes = {
   species: PropTypes.string.isRequired,
   gender: PropTypes.string.isRequired,
   house: PropTypes.string.isRequired,
-  dateOfBirth: PropTypes.string.isRequired,
+  dateOfBirth: PropTypes.string,
   image: PropTypes.string.isRequired,
+};
+
+CardWiki.defaultProps = {
+  dateOfBirth: `DateOfBirth`,
 };
 export default CardWiki;
