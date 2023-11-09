@@ -19,7 +19,7 @@ function SelectChar({ setPage }) {
             Harry Potter
           </button>
         </div>
-        <div className="container-select-2">
+        <div className="container-select-1">
           <img
             src="src/assets/luna-harry-potter.jpeg"
             alt=""
@@ -33,7 +33,7 @@ function SelectChar({ setPage }) {
             Luna Lovegood
           </button>
         </div>
-        <div className="container-select-3">
+        <div className="container-select-1">
           <img
             src="src/assets/cedric-harry-potter.jpeg"
             alt=""
@@ -47,7 +47,7 @@ function SelectChar({ setPage }) {
             Cedric Diggory
           </button>
         </div>
-        <div className="container-select-4">
+        <div className="container-select-1">
           <img
             src="src/assets/drago-harry-potter.jpeg"
             alt=""

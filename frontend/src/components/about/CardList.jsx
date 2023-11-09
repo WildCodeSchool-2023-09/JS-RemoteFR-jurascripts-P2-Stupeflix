@@ -3,7 +3,7 @@ import us from "./us";
 
 function CardList() {
   return (
-    <div>
+    <div className="container-about">
       {us.map((e) => (
         <Card
           key={e.firstName}
