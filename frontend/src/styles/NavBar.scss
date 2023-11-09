@@ -14,7 +14,7 @@
   align-items: center;
   flex-direction: row;
   gap: 7rem;
-  background-color: rgb(222, 222, 222);
+  background-color: var(--color2);
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   width: 50%;
@@ -29,13 +29,13 @@
 
 .container-nav-link {
   text-decoration: none;
-  color: black;
+  color: var(--color);
   font-size: 1.2rem;
   padding: 0.3rem 0.3rem;
 }
 
 .container-nav-link:hover {
-  color: rgb(255, 99, 115);
+  color: var(--color3);
   box-shadow:
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
