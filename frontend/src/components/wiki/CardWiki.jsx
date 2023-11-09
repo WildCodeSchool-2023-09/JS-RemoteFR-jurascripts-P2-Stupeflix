@@ -6,7 +6,7 @@ function CardWiki({ name, species, gender, house, dateOfBirth, image }) {
       <picture>
         <img src={image} alt={name} />
       </picture>
-      <h2>{name}</h2>
+      <h2 className="harry-potter-font">{name}</h2>
       <h3>{house}</h3>
       <ul>
         <li>{species}</li>

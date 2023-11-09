@@ -31,7 +31,7 @@ function Quizz({ data, questionNumber, setQuestionNumber, setPage }) {
     setTimeout(() => {
       if (numberOfQuestion < 5) {
         setTimeout(() => {
-          setQuestionNumber(() => Math.floor(Math.random() * data.length - 1));
+          setQuestionNumber(() => Math.floor(Math.random() * data.length) + 1);
           handleNumberOfQuestion();
           setSelectedAnswer(null);
         }, 500);
@@ -42,22 +42,23 @@ function Quizz({ data, questionNumber, setQuestionNumber, setPage }) {
   };
   return (
     <div className="quizz">
-      <h1>Quizz Selectif</h1>
       {showResults ? (
         <div className="final-result">
-          <h1>Score Final</h1>
-          <h2>Votre score est de {score} point(s)</h2>
-          <p>Ce score sera ajouté aux stats de vos personnages.</p>
+          <h1 className="harry-potter-font">Score Final</h1>
+          <h3>Votre score est de {score} point(s)</h3>
           <button
             type="button"
             onClick={() => setPage({ name: "DisplayFight", id: null })}
+            className="harry-potter-font"
           >
-            Aller au combat
+            Fight
           </button>
+          <p>Ce score sera ajouté aux stats de vos personnages.</p>
         </div>
       ) : (
         <div className="question-container">
-          <h2>Score: {score}</h2>
+          <h1 className="harry-potter-font">Quizz Selectif</h1>
+          <h2>{score}Pts</h2>
           <div className="question">{question?.text}</div>
           <picture>
             <img
