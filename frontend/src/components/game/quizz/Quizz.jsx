@@ -8,10 +8,15 @@ function Quizz({ data, questionNumber, setQuestionNumber, setPage }) {
   const [className, setClassName] = useState("answer");
   const [score, setScore] = useState(0);
   const [showResults, setShowResults] = useState(false);
+  const [numberOfQuestion, setNumberOfQuestion] = useState(1);
 
   useEffect(() => {
     setQuestion(data[questionNumber - 1]);
   }, [data, questionNumber]);
+
+  const handleNumberOfQuestion = () => {
+    setNumberOfQuestion(numberOfQuestion + 1);
+  };
 
   const handleClick = (a) => {
     setSelectedAnswer(a);
@@ -24,9 +29,10 @@ function Quizz({ data, questionNumber, setQuestionNumber, setPage }) {
     }, 800);
 
     setTimeout(() => {
-      if (questionNumber + 1 <= 5) {
+      if (numberOfQuestion < 5) {
         setTimeout(() => {
-          setQuestionNumber((prev) => prev + 1);
+          setQuestionNumber(() => Math.floor(Math.random() * data.length - 1));
+          handleNumberOfQuestion();
           setSelectedAnswer(null);
         }, 500);
       } else {
