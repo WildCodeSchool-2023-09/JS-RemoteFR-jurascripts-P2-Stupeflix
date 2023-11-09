@@ -13,6 +13,7 @@ function SelectChar({ setPage }) {
               className="container-select-img"
             />
             <button
+              className="container-button"
               type="button"
               onClick={() => setPage({ name: "DisplayQuizz", id: null })}
             >
@@ -26,6 +27,7 @@ function SelectChar({ setPage }) {
               className="container-select-img"
             />
             <button
+              className="container-button"
               type="button"
               onClick={() => setPage({ name: "DisplayQuizz", id: null })}
             >
@@ -39,6 +41,7 @@ function SelectChar({ setPage }) {
               className="container-select-img"
             />
             <button
+              className="container-button"
               type="button"
               onClick={() => setPage({ name: "DisplayQuizz", id: null })}
             >
@@ -52,6 +55,7 @@ function SelectChar({ setPage }) {
               className="container-select-img"
             />
             <button
+              className="container-button"
               type="button"
               onClick={() => setPage({ name: "DisplayQuizz", id: null })}
             >

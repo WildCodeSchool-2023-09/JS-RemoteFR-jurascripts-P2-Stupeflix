@@ -8,31 +8,82 @@
   justify-content: center;
   align-items: center;
   gap: 8rem;
-  cursor: pointer;
   text-align: center;
 }
 
 .container-select-img {
   height: 10rem;
   width: 10rem;
+  margin-bottom: 2rem;
 }
 
-.container-select-1:hover {
-  background-color: rgb(176, 176, 176);
-  padding: 0.5rem 1rem;
+.container-button {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(139, 69, 19, 1) 50%,
+    rgba(4, 4, 4, 1) 100%
+  );
+  color: white;
+  padding: 0.3rem 1.5rem;
+  border: 0rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
-.container-select-2:hover {
-  background-color: rgb(176, 176, 176);
-  padding: 0.5rem 1rem;
+.container-select-1 {
+  margin: 1rem;
+  padding: 3rem 0.3rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(230, 230, 230) 0%,
+    rgb(151, 233, 173) 50%,
+    rgb(230, 230, 230) 100%
+  );
+  border-radius: 0.7rem;
+  transition: background-color 1s;
 }
 
-.container-select-3:hover {
-  background-color: rgb(176, 176, 176);
-  padding: 0.5rem 1rem;
+.container-select-2 {
+  margin: 1rem;
+  padding: 3rem 0.3rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(230, 230, 230) 0%,
+    rgb(151, 233, 173) 50%,
+    rgb(230, 230, 230) 100%
+  );
+  border-radius: 0.7rem;
+  transition: background-color 1s;
 }
 
-.container-select-4:hover {
-  background-color: rgb(176, 176, 176);
-  padding: 0.5rem 1rem;
+.container-select-3 {
+  margin: 1rem;
+  padding: 3rem 0.3rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(230, 230, 230) 0%,
+    rgb(151, 233, 173) 50%,
+    rgb(230, 230, 230) 100%
+  );
+  border-radius: 0.7rem;
+  transition: background-color 1s;
+}
+
+.container-select-4 {
+  margin: 1rem;
+  padding: 3rem 0.3rem;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(230, 230, 230) 0%,
+    rgb(151, 233, 173) 50%,
+    rgb(230, 230, 230) 100%
+  );
+  border-radius: 0.7rem;
+  transition: background-color 1s;
 }
