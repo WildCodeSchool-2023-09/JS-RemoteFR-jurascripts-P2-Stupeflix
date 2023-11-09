@@ -3,7 +3,7 @@ import "../styles/NavBar.scss";
 
 function NavBar() {
   return (
-    <nav className="container-nav">
+    <nav className="container-nav harry-potter-font">
       <ul className="container-nav-ul">
         <li className="container-nav-li">
           <Link to="/" className="container-nav-link">

@@ -1,16 +1,16 @@
 import PropTypes from "prop-types";
+import "../../styles/Home.scss";
+import "../../styles/App.scss";
 
 function Home({ setPage }) {
   return (
     <div className="container-game">
-      <h1 className="container-game-h1">HOGWARTS DAY</h1>
-
       <button
         type="button"
         onClick={() => setPage({ name: "DisplayCharact", id: null })}
-        className="container-game-button"
+        className="container-game-button harry-potter-font"
       >
-        Lancer la partie
+        Hogwarts day
       </button>
     </div>
   );

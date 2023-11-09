@@ -1,0 +1,40 @@
+/* --------------------------------BUTTON HOGWARTS DAY-------------------------------- */
+.container-game-button {
+  --b: 3px;
+  --s: 0.45em;
+  --_p: var(--s);
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color3);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition:
+    0.3s linear,
+    color 0s,
+    background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 12rem;
+  border: 0;
+  touch-action: manipulation;
+  margin-bottom: 5rem;
+  text-shadow:
+    rgb(8, 8, 8) 1px 0px 0px,
+    rgb(8, 8, 8) 0.540302px 0.841471px 0px,
+    rgb(8, 8, 8) -0.416147px 0.909297px 0px,
+    rgb(8, 8, 8) -0.989992px 0.14112px 0px,
+    rgb(8, 8, 8) -0.653644px -0.756802px 0px,
+    rgb(8, 8, 8) 0.283662px -0.958924px 0px,
+    rgb(8, 8, 8) 0.96017px -0.279416px 0px;
+}
+
+.container-game-button:hover,
+.container-game-button:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
