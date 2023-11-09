@@ -1,17 +1,13 @@
 .main {
   width: 100%;
+  margin-top: 2.5%;
   color: var(--color2);
-  margin-top: 3%;
   display: flex;
   flex-direction: column;
-  background-image: url("src/assets/Background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .imageQ {
-  width: 350px;
+  width: 100%;
   height: 250px;
   margin: 5% auto;
 }
@@ -20,6 +16,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  h1 {
+    margin: 2% 0;
+  }
 
   h1,
   h3 {
@@ -34,6 +34,7 @@
       var(--color) 0.96017px -0.279416px 0px;
   }
   h2 {
+    margin: 0;
     color: var(--color);
     font-size: 2vw;
     text-shadow:
@@ -95,6 +96,8 @@
   }
 }
 .question-container {
+  margin-top: 3.5%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,7 +105,7 @@
 }
 
 .question {
-  width: 80%;
+  width: 100%;
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
