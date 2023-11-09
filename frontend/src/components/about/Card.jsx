@@ -2,13 +2,15 @@ import PropsTypes from "prop-types";
 
 function Card({ firstName, lastName, dayOfBirth, language, picDev, picAlt }) {
   return (
-    <div className="usCard">
-      <h3>
+    <div className="card-about">
+      <h2 className="harry-potter-font">
         {firstName} {lastName}
-      </h3>
-      <p>Née le : {dayOfBirth}</p>
-      <img src={picDev} alt={picAlt} />
-      <p>Language : {language}</p>
+      </h2>
+      <img className="img-us" src={picDev} alt={picAlt} />
+      <p>Nee le : {dayOfBirth}</p>
+      <span>
+        Role : <h3>{language}</h3>
+      </span>
     </div>
   );
 }
