@@ -2,11 +2,11 @@
   width: 100%;
   .container-about {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: auto;
     .card-about {
       width: 90%;
-      margin-top: 1%;
+      margin: 10% auto;
       height: auto;
       color: var(--color2);
       border: 1px solid var(--color2);
@@ -30,11 +30,9 @@
         width: 40%;
       }
       p {
-        font-family: "Harry P";
         font-size: 1.5vw;
       }
       span {
-        font-family: "Harry P";
         font-size: 1.5vw;
       }
     }
