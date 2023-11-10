@@ -31,7 +31,7 @@ function Quizz({ data, questionNumber, setQuestionNumber, setPage }) {
     setTimeout(() => {
       if (numberOfQuestion < 5) {
         setTimeout(() => {
-          setQuestionNumber(() => Math.floor(Math.random() * data.length) + 1);
+          setQuestionNumber(() => Math.floor(Math.random() * 30) + 1);
           handleNumberOfQuestion();
           setSelectedAnswer(null);
         }, 500);
