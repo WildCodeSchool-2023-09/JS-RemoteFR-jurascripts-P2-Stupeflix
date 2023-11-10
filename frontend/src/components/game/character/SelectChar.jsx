@@ -7,7 +7,7 @@ function SelectChar({ setPage }) {
       <div className="container-select">
         <div className="container-select-1">
           <img
-            src="src/assets/harry-potter.jpeg"
+            src="src/assets/harry-potter.jpg"
             alt=""
             className="container-select-img"
           />
@@ -21,7 +21,7 @@ function SelectChar({ setPage }) {
         </div>
         <div className="container-select-1">
           <img
-            src="src/assets/luna-harry-potter.jpeg"
+            src="src/assets/luna-lovegood.png"
             alt=""
             className="container-select-img"
           />
@@ -35,7 +35,7 @@ function SelectChar({ setPage }) {
         </div>
         <div className="container-select-1">
           <img
-            src="src/assets/cedric-harry-potter.jpeg"
+            src="src/assets/cedric-digory.png"
             alt=""
             className="container-select-img"
           />
@@ -49,7 +49,7 @@ function SelectChar({ setPage }) {
         </div>
         <div className="container-select-1">
           <img
-            src="src/assets/drago-harry-potter.jpeg"
+            src="src/assets/drago-malfoy.png"
             alt=""
             className="container-select-img"
           />
