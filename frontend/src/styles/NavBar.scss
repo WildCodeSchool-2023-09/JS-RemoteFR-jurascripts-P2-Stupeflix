@@ -13,7 +13,12 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  background-color: var(--color);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(139, 69, 19, 1) 50%,
+    rgba(4, 4, 4, 1) 100%
+  );
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   width: 50%;
