@@ -1,7 +1,7 @@
 const questions = [
   {
     id: 1,
-    img: "src/assets/questions/Question1_1.png", // Image en rapport avec la question
+    img: "Question1_1.png", // Image en rapport avec la question
     text: "Quelle est cette prison qui fait trembler de peur le monde de la sorcellerie ?",
     options: [
       { id: 0, text: "Astara", correct: false },
@@ -13,7 +13,7 @@ const questions = [
   },
   {
     id: 2,
-    img: "src/assets/questions/Question2_1.png",
+    img: "Question2_1.png",
     text: "Lequel de ces balais n'existe pas ?",
     options: [
       { id: 0, text: "L'Éclair de feu", correct: false },
@@ -24,7 +24,7 @@ const questions = [
   },
   {
     id: 3,
-    img: "src/assets/questions/Question3_1.png",
+    img: "Question3_1.png",
     text: "Quelle poudre lance-t-on dans sa cheminée pour atterrir dans une autre cheminée ?",
     options: [
       { id: 0, text: "La poudre de cheminette", correct: true },
@@ -35,7 +35,7 @@ const questions = [
   },
   {
     id: 4,
-    img: "src/assets/questions/Question4_1.png",
+    img: "Question4_1.png",
     text: "Où le fameux diadème de Serdaigle est-il caché ?",
     options: [
       { id: 0, text: "Dans une caverne, près d'une mer", correct: false },
@@ -50,7 +50,7 @@ const questions = [
   },
   {
     id: 5,
-    img: "src/assets/questions/Question5_1.png",
+    img: "Question5_1.png",
     text: "Quelle formule magique faut-il prononcer pour pouvoir désarmer son adversaire ?",
     options: [
       { id: 0, text: "Evanesco !", correct: false },
@@ -61,7 +61,7 @@ const questions = [
   },
   {
     id: 6,
-    img: "src/assets/questions/Question6_1.png",
+    img: "Question6_1.png",
     text: "Quelle est cette adorable plante qui étrangle celui qui la touche ?",
     options: [
       { id: 0, text: "Le Filet de l'Enfer", correct: false },
@@ -73,7 +73,7 @@ const questions = [
   },
   {
     id: 7,
-    img: "src/assets/questions/Question7_1.png",
+    img: "Question7_1.png",
     text: "Cette créature prolifère dans le jardin de Ronald Weasley :",
     options: [
       { id: 0, text: "Le gobelin", correct: false },
@@ -85,7 +85,7 @@ const questions = [
   },
   {
     id: 8,
-    img: "src/assets/questions/Question8_1.png",
+    img: "Question8_1.png",
     text: "Cette chouette Harfang des neiges posée sur les épaules du timide Harry Potter a fait le tour du monde. Je m'appelle...",
     options: [
       { id: 0, text: "Hedwige", correct: true },
@@ -97,7 +97,7 @@ const questions = [
   },
   {
     id: 9,
-    img: "src/assets/questions/Question9_1.png",
+    img: "Question9_1.png",
     text: "Quel maléfice n'existe pas ?",
     options: [
       { id: 0, text: "Impero !", correct: false },
@@ -109,7 +109,7 @@ const questions = [
   },
   {
     id: 10,
-    img: "src/assets/questions/Question10_1.png",
+    img: "Question10_1.png",
     text: " Au Quidditch, qu'est-ce qui est de couleur jaune ?",
     options: [
       { id: 0, text: "Le Dégommeur", correct: false },
@@ -121,7 +121,7 @@ const questions = [
   },
   {
     id: 11,
-    img: "src/assets/questions/Question1_2.png",
+    img: "Question1_2.png",
     text: "Quel est le village où ont été tués Lily et James Potter ?",
     options: [
       { id: 0, text: "Godric's Hollow", correct: true },
@@ -133,7 +133,7 @@ const questions = [
   },
   {
     id: 12,
-    img: "src/assets/questions/Question2_2.png",
+    img: "Question2_2.png",
     text: "Quel est le mot de passe pour rentrer dans la salle commune de Gryffondor ?",
     options: [
       { id: 0, text: "Kaputt Draconis", correct: false },
@@ -145,7 +145,7 @@ const questions = [
   },
   {
     id: 13,
-    img: "src/assets/questions/Question3_2.png",
+    img: "Question3_2.png",
     text: "Qui est le fantôme de la maison Gryffondor ?",
     options: [
       { id: 0, text: "Fantomas", correct: false },
@@ -157,7 +157,7 @@ const questions = [
   },
   {
     id: 14,
-    img: "src/assets/questions/Question4_2.png",
+    img: "Question4_2.png",
     text: "Quelle est la plaque d'immatriculation de la voiture volante ?",
     options: [
       { id: 0, text: "7990 gh", correct: false },
@@ -169,7 +169,7 @@ const questions = [
   },
   {
     id: 15,
-    img: "src/assets/questions/Question5_2.png",
+    img: "Question5_2.png",
     text: "Comment s'appelle l'arbre dans lequel Ron et Harry arrivent-ils ?",
     options: [
       { id: 0, text: "Le Poudlard Cogneur", correct: false },
@@ -181,7 +181,7 @@ const questions = [
   },
   {
     id: 16,
-    img: "src/assets/questions/Question6_2.png",
+    img: "Question6_2.png",
     text: "Qui se fait pétrifier en premier ?",
     options: [
       { id: 0, text: "Hermione Granger", correct: false },
@@ -193,7 +193,7 @@ const questions = [
   },
   {
     id: 17,
-    img: "src/assets/questions/Question7_2.png",
+    img: "Question7_2.png",
     text: "Comment s'appelle le livre qui s'attaque à Neville Londubat ?",
     options: [
       { id: 0, text: "Le monstrueux livre des monstres", correct: true },
@@ -205,7 +205,7 @@ const questions = [
   },
   {
     id: 18,
-    img: "src/assets/questions/Question8_2.png",
+    img: "Question8_2.png",
     text: "Qui aide Sirius Black à s'introduire dans le château ?",
     options: [
       { id: 0, text: "Severus Rogue", correct: false },
@@ -217,7 +217,7 @@ const questions = [
   },
   {
     id: 19,
-    img: "src/assets/questions/Question9_2.png",
+    img: "Question9_2.png",
     text: "Comment se prénomme le chat d'Hermione Granger ?",
     options: [
       { id: 0, text: "Patenrond", correct: false },
@@ -229,7 +229,7 @@ const questions = [
   },
   {
     id: 20,
-    img: "src/assets/questions/Question10_2.png",
+    img: "Question10_2.png",
     text: "Qui se fait passer pour Alastor Maugrey à l'aide du Polynectar ?",
     options: [
       { id: 0, text: "Peter Pettigrew", correct: false },
@@ -241,7 +241,7 @@ const questions = [
   },
   {
     id: 21,
-    img: "src/assets/questions/Question1_3.png",
+    img: "Question1_3.png",
     text: "Comment s'appelle le contrôleur du Magicobus ?",
     options: [
       { id: 0, text: "Stan Rocade", correct: true },
@@ -253,7 +253,7 @@ const questions = [
   },
   {
     id: 22,
-    img: "src/assets/questions/Question2_3.png",
+    img: "Question2_3.png",
     text: "Quel est le patronus de Ginny Weasley ?",
     options: [
       { id: 0, text: "Un serpent", correct: false },
@@ -265,7 +265,7 @@ const questions = [
   },
   {
     id: 23,
-    img: "src/assets/questions/Question3_3.png",
+    img: "Question3_3.png",
     text: "Quel livre mordeur Harry essaie-t-il d'ouvrir au Chaudron Baveur ?",
     options: [
       {
@@ -281,7 +281,7 @@ const questions = [
   },
   {
     id: 24,
-    img: "src/assets/questions/Question4_3.png",
+    img: "Question4_3.png",
     text: "Après avoir été désarmé par Harry dans le manoir des Malefoy, quelle baguette Drago utilise-t-il ?",
     options: [
       { id: 0, text: "Celle de Bellatrix Lestrange", correct: false },
@@ -293,7 +293,7 @@ const questions = [
   },
   {
     id: 25,
-    img: "src/assets/questions/Question5_3.png",
+    img: "Question5_3.png",
     text: "Qu'y a-t-il écrit à côté du sortilège de sectumsempra dans le livre de potions de Harry ?",
     options: [
       { id: 0, text: "Attention", correct: false },
@@ -305,7 +305,7 @@ const questions = [
   },
   {
     id: 26,
-    img: "src/assets/questions/Question6_3.png",
+    img: "Question6_3.png",
     text: "Selon Hermione, qui est le jeune homme sur la photo dans la maison de Bathilda Tourdesac ?",
     options: [
       { id: 0, text: "Gellert Grindelwald", correct: true },
@@ -317,7 +317,7 @@ const questions = [
   },
   {
     id: 27,
-    img: "src/assets/questions/Question7_3.png",
+    img: "Question7_3.png",
     text: "Où transplanent Harry, Ron et Hermione après l'attaque des mangemorts pendant le mariage de Bill et Fleur ?",
     options: [
       { id: 0, text: "À la chaumière aux coquillages", correct: false },
@@ -329,7 +329,7 @@ const questions = [
   },
   {
     id: 28,
-    img: "src/assets/questions/Question8_3.png",
+    img: "Question8_3.png",
     text: "Dans Harry Potter et l'ordre du phénix, quelle lettre apparaît dans le ciel au-dessus de Poudlard pendant le feu d'artifice géant ?",
     options: [
       { id: 0, text: "Un V", correct: false },
@@ -341,7 +341,7 @@ const questions = [
   },
   {
     id: 29,
-    img: "src/assets/questions/Question9_3.png",
+    img: "Question9_3.png",
     text: "Qui est le dernier champion à sortir du lac lors de la deuxième tâche du tournoi des trois sorciers ?",
     options: [
       { id: 0, text: "Fleur Delacour", correct: false },
@@ -353,7 +353,7 @@ const questions = [
   },
   {
     id: 30,
-    img: "src/assets/questions/Question10_3.png",
+    img: "Question10_3.png",
     text: "Dans Harry Potter à l'école des sorciers, qui dénonce Hagrid parce que celui-ci élève un bébé dragon dans sa cabane ?",
     options: [
       { id: 0, text: "Argus Rusard", correct: false },

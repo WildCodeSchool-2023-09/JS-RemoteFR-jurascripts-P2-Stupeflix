@@ -6,11 +6,7 @@ function SelectChar({ setPage }) {
     <div className="container-game">
       <div className="container-select">
         <div className="container-select-1">
-          <img
-            src="src/assets/harry-potter.jpg"
-            alt=""
-            className="container-select-img"
-          />
+          <img src="harry-potter.jpg" alt="" className="container-select-img" />
           <button
             className="container-button"
             type="button"
@@ -21,7 +17,7 @@ function SelectChar({ setPage }) {
         </div>
         <div className="container-select-1">
           <img
-            src="src/assets/luna-lovegood.png"
+            src="luna-lovegood.png"
             alt=""
             className="container-select-img"
           />
@@ -35,7 +31,7 @@ function SelectChar({ setPage }) {
         </div>
         <div className="container-select-1">
           <img
-            src="src/assets/cedric-digory.png"
+            src="cedric-digory.png"
             alt=""
             className="container-select-img"
           />
@@ -48,11 +44,7 @@ function SelectChar({ setPage }) {
           </button>
         </div>
         <div className="container-select-1">
-          <img
-            src="src/assets/drago-malfoy.png"
-            alt=""
-            className="container-select-img"
-          />
+          <img src="drago-malfoy.png" alt="" className="container-select-img" />
           <button
             className="container-button"
             type="button"
