@@ -1,41 +1,23 @@
-import Counter from "./components/Counter";
-import logo from "./assets/logo.svg";
-
-import "./App.css";
+import "./styles/App.scss";
+import { useState } from "react";
+import Home from "./components/game/Home";
+import DisplayQuizz from "./components/game/quizz/DisplayQuizz";
+import DisplayFight from "./components/game/fight/DisplayFight";
+import NavBar from "./components/NavBar";
+import DisplayCharact from "./components/game/character/DisplayCharact";
 
 function App() {
+  const [page, setPage] = useState({ name: "Home", id: null });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React !</p>
-
-        <Counter />
-
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {" | "}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <div className="App">
+        {page.name === "Home" && <Home setPage={setPage} />}
+        {page.name === "DisplayCharact" && <DisplayCharact setPage={setPage} />}
+        {page.name === "DisplayQuizz" && <DisplayQuizz setPage={setPage} />}
+        {page.name === "DisplayFight" && <DisplayFight />}
+      </div>
+    </>
   );
 }
 
