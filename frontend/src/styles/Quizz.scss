@@ -47,14 +47,14 @@
       var(--color2) 0.96017px -0.279416px 0px;
   }
   p {
-    color: var(--color3);
+    color: var(--color2);
     font-size: 1.2vw;
     font-style: italic;
     font-weight: 500;
     margin-top: 25%;
-    &:hover {
-      background-color: var(--color);
-    }
+    background-color: var(--color3);
+    width: 80%;
+    text-align: center;
   }
   button {
     --b: 3px;
@@ -64,7 +64,7 @@
     color: var(--color2);
     background: conic-gradient(
         from 90deg at var(--b) var(--b),
-        #0000 90deg,
+        #ffffff42 90deg,
         var(--color) 0
       )
       var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
