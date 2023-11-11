@@ -7,10 +7,11 @@ function Card({ firstName, lastName, dayOfBirth, language, picDev, picAlt }) {
         {firstName} {lastName}
       </h2>
       <img className="img-us" src={picDev} alt={picAlt} />
-      <p>Nee le : {dayOfBirth}</p>
-      <span>
-        Role : <h3>{language}</h3>
-      </span>
+      <div>
+        <p>Nee le : {dayOfBirth}</p>
+        <p className="p-2">Role :</p>
+        <h3>{language}</h3>
+      </div>
     </div>
   );
 }
