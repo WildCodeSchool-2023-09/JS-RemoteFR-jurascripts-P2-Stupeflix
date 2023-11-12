@@ -1,0 +1,47 @@
+.bsinfo {
+  font-size: 2vw;
+  position: absolute;
+  top: 2.5%;
+  left: 2%;
+  border: 0.1rem orange solid;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.421);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(255, 184, 51);
+  }
+}
+
+.div-info {
+  position: absolute;
+  top: 2.5%;
+  left: 2%;
+  border: 0.2rem var(--color) solid;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.421);
+  color: black;
+
+  .bsdash {
+    font-size: 1vw;
+    border: 0.1rem orange solid;
+    border-radius: 0.7rem;
+    padding: 0.1rem 0.3rem;
+    background-color: rgba(255, 255, 255, 0.421);
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(255, 184, 51);
+    }
+  }
+
+  p {
+    margin-top: 0rem;
+  }
+
+  li {
+    color: var(--color3);
+  }
+}

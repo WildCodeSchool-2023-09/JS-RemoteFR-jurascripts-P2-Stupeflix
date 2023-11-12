@@ -7,11 +7,15 @@ function CardWiki({ name, species, gender, house, dateOfBirth, image }) {
         <img src={image} alt={name} />
       </picture>
       <h2 className="harry-potter-font">{name}</h2>
-      <h3>{house}</h3>
+      {house ? <h3>{house}</h3> : <h3>No house or Unknown</h3>}
       <ul>
-        <li>{species}</li>
-        <li>{gender}</li>
-        <li>{dateOfBirth}</li>
+        {image ? <li>Species : {species}</li> : <li>Species : Unknown</li>}
+        {gender ? <li>Gender : {gender}</li> : <li>Gender : Unknown</li>}
+        {dateOfBirth ? (
+          <li>Date of birth : {dateOfBirth}</li>
+        ) : (
+          <li>Date of birth : Unknown</li>
+        )}
       </ul>
     </div>
   );
