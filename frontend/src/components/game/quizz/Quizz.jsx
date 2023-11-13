@@ -53,7 +53,7 @@ function Quizz({ data, questionNumber, setQuestionNumber, setPage }) {
           >
             Fight
           </button>
-          <p>Ce score sera ajouté aux stats de vos personnages.</p>
+          <p>Ton score sera ajouté aux stats de ton personnage</p>
         </div>
       ) : (
         <div className="question-container">
