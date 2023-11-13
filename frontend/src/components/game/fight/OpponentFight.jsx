@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
 import "../../../styles/CharFight.scss";
 
-function CharFight({ life }) {
+function OpponentFight({ life }) {
   return (
     <div className="opp-fight">
-      <h1 className="harry-potter-font fight-h1">Harry Potter</h1>
-      <img src="harry-potter.jpg" alt="" className="fight-img" />
+      <h1 className="harry-potter-font fight-h1">Luna Lovegood</h1>
+      <img src="luna-lovegood.png" alt="" className="fight-img" />
       <div className="fight-box">
-        <p>Harry Potter</p>
+        <p>Luna Lovegood</p>
         <div className="fight-rod-life-outer">
           <div className="fight-rod-life-inner" style={{ "--width": life }}>
             {life}
@@ -20,8 +20,8 @@ function CharFight({ life }) {
   );
 }
 
-CharFight.propTypes = {
+OpponentFight.propTypes = {
   life: PropTypes.string.isRequired,
 };
 
-export default CharFight;
+export default OpponentFight;

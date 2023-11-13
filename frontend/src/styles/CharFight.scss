@@ -1,35 +1,48 @@
 .fight-img {
-  width: 15%;
+  width: 30%;
   height: 40vh;
 }
 
-.fight-box {
+.opp-fight {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  width: 20%;
-  background-color: var(--color);
-  border-radius: 0.3rem;
-  margin-top: 2rem;
+  justify-content: center;
+  width: 100%;
 
-  .fight-rod-life-outer {
-    width: 80%;
-    border: 0.1rem solid;
-    border-radius: 0.5rem;
+  .fight-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    background-color: var(--color);
+    border-radius: 0.3rem;
+    margin-top: 2rem;
 
-    .fight-rod-life-inner {
-      background-color: rgb(0, 255, 17);
-      width: var(--width);
-      text-align: center;
+    .fight-rod-life-outer {
+      width: 80%;
+      border: 0.1rem solid;
       border-radius: 0.5rem;
+
+      .fight-rod-life-inner {
+        background-color: rgb(0, 255, 17);
+        width: var(--width);
+        text-align: center;
+        border-radius: 0.5rem;
+      }
+    }
+    .fight-p-2 {
+      margin-top: 0rem;
+    }
+
+    .fight-p-3 {
+      margin-top: 0rem;
     }
   }
-  .fight-p-2 {
-    margin-top: 0rem;
-  }
 
-  .fight-p-3 {
-    margin-top: 0rem;
+  &:hover {
+    transition: 1s;
+    transform: scale(1.05);
   }
 }
