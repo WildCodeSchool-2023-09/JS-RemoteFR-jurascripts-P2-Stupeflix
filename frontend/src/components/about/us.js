@@ -12,33 +12,25 @@ const us = [
   {
     firstName: "Kevin",
     lastName: "Turnaco",
-    dayOfBirth: "19/12/1991",
     language: "Scrum Master",
-    picAlt: "Ride the best, or die like the rest !",
     picDev: gryffondor,
   },
   {
     firstName: "Alexandre",
     lastName: "Gomes",
-    dayOfBirth: "24/10/2000",
     language: "Code Reviewer",
-    picAlt: "CSS-Lover",
     picDev: poufsouffle,
   },
   {
     firstName: "Frederic",
     lastName: "Pelletier",
-    dayOfBirth: "05/06/1992",
     language: "Lead Design",
-    picAlt: "Grumpy developper",
     picDev: serdaigle,
   },
   {
     firstName: "Jordan",
     lastName: "Chatelain",
-    dayOfBirth: "19/06/1984",
     language: "Product Owner",
-    picAlt: "Soyez vous même les autres sont déjà pris",
     picDev: serpentard,
   },
 ];
