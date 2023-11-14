@@ -8,8 +8,8 @@ function Card({ firstName, lastName, role, picDev, picAlt }) {
       </h2>
       <img className="img-us" src={picDev} alt={picAlt} />
       <div>
-        <p className="p-2">Role :</p>
-        <h3>{role}</h3>
+        <p className="p-2">Rôle :</p>
+        <h3>{language}</h3>
       </div>
     </div>
   );
