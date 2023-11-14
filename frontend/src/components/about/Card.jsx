@@ -9,7 +9,7 @@ function Card({ firstName, lastName, role, picDev, picAlt }) {
       <img className="img-us" src={picDev} alt={picAlt} />
       <div>
         <p className="p-2">Rôle :</p>
-        <h3>{language}</h3>
+        <h3>{role}</h3>
       </div>
     </div>
   );
