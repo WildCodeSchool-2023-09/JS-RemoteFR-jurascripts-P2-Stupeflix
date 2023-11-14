@@ -9,10 +9,9 @@ function CardList() {
           key={e.firstName}
           firstName={e.firstName}
           lastName={e.lastName}
-          dayOfBirth={e.dayOfBirth}
           picDev={e.picDev}
           picAlt={e.picAlt}
-          language={e.language}
+          role={e.role}
         />
       ))}
     </div>
