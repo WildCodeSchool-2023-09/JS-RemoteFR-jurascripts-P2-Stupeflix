@@ -1,6 +1,6 @@
 import PropsTypes from "prop-types";
 
-function Card({ firstName, lastName, language, picDev, picAlt }) {
+function Card({ firstName, lastName, role, picDev, picAlt }) {
   return (
     <div className="card-about">
       <h2 className="harry-potter-font">
@@ -9,7 +9,7 @@ function Card({ firstName, lastName, language, picDev, picAlt }) {
       <img className="img-us" src={picDev} alt={picAlt} />
       <div>
         <p className="p-2">Role :</p>
-        <h3>{language}</h3>
+        <h3>{role}</h3>
       </div>
     </div>
   );
@@ -20,6 +20,6 @@ Card.propTypes = {
   lastName: PropsTypes.string.isRequired,
   picDev: PropsTypes.string.isRequired,
   picAlt: PropsTypes.string.isRequired,
-  language: PropsTypes.string.isRequired,
+  role: PropsTypes.string.isRequired,
 };
 export default Card;

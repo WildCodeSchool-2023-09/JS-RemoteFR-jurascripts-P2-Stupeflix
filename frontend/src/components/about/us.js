@@ -12,25 +12,25 @@ const us = [
   {
     firstName: "Kevin",
     lastName: "Turnaco",
-    language: "Scrum Master",
+    role: "Scrum Master",
     picDev: gryffondor,
   },
   {
     firstName: "Alexandre",
     lastName: "Gomes",
-    language: "Code Reviewer",
+    role: "Code Reviewer",
     picDev: poufsouffle,
   },
   {
     firstName: "Frederic",
     lastName: "Pelletier",
-    language: "Lead Design",
+    role: "Lead Design",
     picDev: serdaigle,
   },
   {
     firstName: "Jordan",
     lastName: "Chatelain",
-    language: "Product Owner",
+    role: "Product Owner",
     picDev: serpentard,
   },
 ];
