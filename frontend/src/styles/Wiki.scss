@@ -84,4 +84,12 @@
       }
     }
   }
+  @media screen and (max-width: 900px) {
+    .container-wiki {
+      grid-template-columns: 1fr 1fr;
+      .card-wiki:hover {
+        transform: none;
+      }
+    }
+  }
 }
