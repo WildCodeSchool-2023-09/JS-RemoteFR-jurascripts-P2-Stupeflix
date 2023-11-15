@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
+import "../../../styles/Fight.scss";
 
-function LifeComponent() {
+function Fight() {
   const [combatLog, setCombatLog] = useState([]);
   const [winner, setWinner] = useState(null);
 
   const [character, setCharacter] = useState({
-    name: "Harry Potter",
+    name: "Christopher",
     strength: 15,
     dexterity: 3,
     life: 20,
@@ -63,22 +64,16 @@ function LifeComponent() {
   }, [character, enemy]);
 
   return (
-    <div>
-      <p>
-        {character.name} - Vie: {character.life}
-      </p>
-      <p>
-        {enemy.name} - Vie: {enemy.life}
-      </p>
-      <div>
-        <h3>Détails du combat :</h3>
-        {combatLog.map((detail) => (
-          <p key={detail}>{detail}</p>
-        ))}
-        {winner && <p>{winner}</p>}
-      </div>
+    <div className="combatlog">
+      <h2 className="combatlog harry-potter-font">Détails du combat :</h2>
+      {combatLog.map((details) => (
+        <p key={details + 1} className="combatslog">
+          {details}
+        </p>
+      ))}
+      {winner && <h2 className="winner harry-potter-font">{winner}</h2>}
     </div>
   );
 }
 
-export default LifeComponent;
+export default Fight;
