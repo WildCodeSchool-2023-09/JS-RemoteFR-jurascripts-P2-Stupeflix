@@ -96,6 +96,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  span {
+    background-color: var(--color3);
+    width: 30px;
+    height: 25px;
+    border: solid var(--color2) 1px;
+    padding: 1px;
+    border-radius: 50%;
+    color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .question {
