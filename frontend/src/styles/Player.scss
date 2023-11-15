@@ -1,0 +1,57 @@
+.fight-img {
+  width: 30%;
+  height: 40vh;
+}
+
+.opp-fight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5%;
+  height: auto;
+
+  h1 {
+    width: 50%;
+    text-align: center;
+    font-size: 4vw;
+    color: var(--color2);
+    background-color: var(--color3);
+    border-radius: 20px;
+    border-style: double;
+  }
+  img {
+    width: 50%;
+  }
+  .fight-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    background-color: var(--color);
+    border-radius: 0.3rem;
+    margin-top: 5%;
+
+    .fight-rod-life-outer {
+      width: 80%;
+      border: 0.1rem solid;
+      border-radius: 0.5rem;
+
+      .fight-rod-life-inner {
+        background-color: rgb(0, 255, 17);
+        width: var(--width);
+        text-align: center;
+        border-radius: 0.5rem;
+      }
+    }
+    .fight-p-2 {
+      margin-top: 0rem;
+    }
+
+    .fight-p-3 {
+      margin-top: 0rem;
+    }
+  }
+}

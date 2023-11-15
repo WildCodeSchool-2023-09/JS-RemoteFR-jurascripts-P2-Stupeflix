@@ -1,18 +1,12 @@
-.main {
-  width: 100%;
-  margin-top: 2.5%;
-  color: var(--color2);
-  display: flex;
-  flex-direction: column;
-}
-
 .imageQ {
   width: 100%;
   height: 250px;
+  max-height: 250px;
   margin: 5% auto;
 }
 .quizz {
-  height: 100%;
+  width: 100%;
+  color: var(--color2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +28,7 @@
       var(--color) 0.96017px -0.279416px 0px;
   }
   h2 {
-    margin: 0;
+    margin: 0 0 1% 0;
     color: var(--color);
     font-size: 2vw;
     text-shadow:
@@ -47,14 +41,16 @@
       var(--color2) 0.96017px -0.279416px 0px;
   }
   p {
-    color: var(--color3);
+    color: var(--color2);
     font-size: 1.2vw;
     font-style: italic;
     font-weight: 500;
     margin-top: 25%;
-    &:hover {
-      background-color: var(--color);
-    }
+    background-color: var(--color3);
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    border-style: double;
   }
   button {
     --b: 3px;
@@ -64,7 +60,7 @@
     color: var(--color2);
     background: conic-gradient(
         from 90deg at var(--b) var(--b),
-        #0000 90deg,
+        #ffffff42 90deg,
         var(--color) 0
       )
       var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
@@ -96,16 +92,26 @@
   }
 }
 .question-container {
-  margin-top: 3.5%;
-  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  span {
+    background-color: var(--color3);
+    width: 30px;
+    height: 25px;
+    border: solid var(--color2) 1px;
+    padding: 1px;
+    border-radius: 50%;
+    color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .question {
-  width: 100%;
+  width: 90%;
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
@@ -113,7 +119,7 @@
     rgba(4, 4, 4, 1) 100%
   );
   text-align: center;
-  padding: 20px;
+  padding: 5%;
   border-radius: 10px;
   border: 2px solid white;
   font-size: 20px;
@@ -182,4 +188,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 900px) {
+    h1 {
+      font-size: 15vw;
+    }
+    h3 {
+      font-size: 5vw;
+    }
+    button {
+      font-size: 10vw;
+    }
+    p {
+      font-size: 4vw;
+    }
+  }
 }
