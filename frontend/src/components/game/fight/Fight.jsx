@@ -6,7 +6,7 @@ function Fight() {
   const [winner, setWinner] = useState(null);
 
   const [character, setCharacter] = useState({
-    name: "Harry Potter",
+    name: "Christopher",
     strength: 15,
     dexterity: 3,
     life: 20,
