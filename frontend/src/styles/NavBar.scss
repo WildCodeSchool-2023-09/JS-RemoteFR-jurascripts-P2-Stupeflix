@@ -72,3 +72,43 @@
     color: var(--color3);
   }
 }
+
+.menu {
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 5%;
+  font-size: 4vw;
+  width: 5%;
+  background-color: rgba(255, 255, 255, 0.421);
+  border: 0.1rem orange solid;
+  border-radius: 20%;
+}
+
+.menu-open {
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 15%;
+  background-color: rgba(255, 255, 255, 0.421);
+  border: 0.1rem orange solid;
+  border-radius: 10%;
+
+  .close {
+    margin-top: 5%;
+    margin-left: 5%;
+    background-color: rgba(255, 0, 0, 0.421);
+    border: 0.1rem rgb(255, 0, 0) solid;
+    border-radius: 50%;
+  }
+
+  ul {
+    padding: 5%;
+    li {
+      list-style-type: none;
+      .menu-open-link {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}
