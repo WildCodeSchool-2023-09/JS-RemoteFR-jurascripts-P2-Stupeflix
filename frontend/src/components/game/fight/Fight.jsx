@@ -1,23 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "../../../styles/Fight.scss";
+import characterData from "./charactersData";
+import enemyData from "./enemysData";
 
 function Fight() {
   const [combatLog, setCombatLog] = useState([]);
   const [winner, setWinner] = useState(null);
 
-  const [character, setCharacter] = useState({
-    name: "Christopher",
-    strength: 15,
-    dexterity: 3,
-    life: 20,
-  });
-
-  const [enemy, setEnemy] = useState({
-    name: "Benoît le BG",
-    strength: 15,
-    dexterity: 3,
-    life: 20,
-  });
+  const randomEnemy = (enemys) => {
+    const randomIndex = Math.floor(Math.random() * enemys.length);
+    return enemys[randomIndex];
+  };
+  const [character, setCharacter] = useState(characterData[0]);
+  const [enemy, setEnemy] = useState(randomEnemy(enemyData));
 
   useEffect(() => {
     const fightInterval = setInterval(() => {
@@ -65,7 +60,9 @@ function Fight() {
 
   return (
     <div className="combatlog">
-      <h2 className="combatlog harry-potter-font">Détails du combat :</h2>
+      <h2 className="combatlog harry-potter-font">
+        Détails du combat {enemy.name}:
+      </h2>
       {combatLog.map((details) => (
         <p key={details + 1} className="combatslog">
           {details}
