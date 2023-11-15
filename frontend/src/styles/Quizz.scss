@@ -176,4 +176,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 900px) {
+    h1 {
+      font-size: 15vw;
+    }
+    h3 {
+      font-size: 5vw;
+    }
+    button {
+      font-size: 10vw;
+    }
+    p {
+      font-size: 4vw;
+    }
+  }
 }
