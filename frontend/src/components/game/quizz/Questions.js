@@ -86,7 +86,7 @@ const questions = [
   {
     id: 8,
     img: "Question8_1.png",
-    text: "Cette chouette Harfang des neiges posées sur les épaules du timide Harry Potter a fait le tour du monde. Je m'appelle...",
+    text: "Cette chouette Harfang des neiges, posée sur les épaules du timide Harry Potter a fait le tour du monde. Je m'appelle...",
     options: [
       { id: 0, text: "Hedwige", correct: true },
       { id: 1, text: "Helena", correct: false },
