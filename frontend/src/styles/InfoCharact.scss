@@ -1,13 +1,17 @@
 .bsinfo {
   font-size: 2vw;
   position: absolute;
-  top: 2.5%;
+  top: 75%;
   left: 2%;
   border: 0.1rem orange solid;
   border-radius: 1rem;
   padding: 0.3rem;
   background-color: rgba(255, 255, 255, 0.421);
   cursor: pointer;
+
+  @media screen and (max-width: 900px) {
+    top: 80%;
+  }
 
   &:hover {
     background-color: rgb(255, 184, 51);
@@ -16,13 +20,20 @@
 
 .div-info {
   position: absolute;
-  top: 2.5%;
+  top: 75%;
   left: 2%;
+  width: 14%;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
   border: 0.2rem var(--color) solid;
   border-radius: 0.3rem;
   padding: 0.3rem;
   background-color: rgba(255, 255, 255, 0.421);
   color: black;
+  @media screen and (max-width: 900px) {
+    top: 80%;
+  }
 
   .bsdash {
     font-size: 1vw;
@@ -38,10 +49,19 @@
   }
 
   p {
-    margin-top: 0rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  ul {
+    padding: 10px;
+    margin: 0 auto auto auto;
   }
 
   li {
-    color: var(--color3);
+    list-style: none;
+    text-align: center;
+    @media screen and (max-width: 900px) {
+      margin: 0;
+    }
   }
 }
