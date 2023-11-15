@@ -14,7 +14,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 91.5vh;
+  min-height: 100vh;
 }
 
 @font-face {
@@ -39,7 +39,6 @@ body {
 
 .container-game {
   width: 100%;
-  min-height: 91.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
