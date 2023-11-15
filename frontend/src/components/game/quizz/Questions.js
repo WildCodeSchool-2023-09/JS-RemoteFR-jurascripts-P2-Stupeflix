@@ -21,6 +21,7 @@ const questions = [
       { id: 2, text: "Le Nimbus 2000", correct: false },
       { id: 3, text: "Le Super destructeur", correct: false },
     ],
+    difficult: 1,
   },
   {
     id: 3,
@@ -32,6 +33,7 @@ const questions = [
       { id: 2, text: "La poudre de chemine", correct: false },
       { id: 3, text: "La poudre de perlimpinpin", correct: false },
     ],
+    difficult: 1,
   },
   {
     id: 4,
@@ -47,6 +49,7 @@ const questions = [
       },
       { id: 3, text: "Dans un livre des sorts", correct: false },
     ],
+    difficult: 1,
   },
   {
     id: 5,
@@ -58,6 +61,7 @@ const questions = [
       { id: 2, text: "Expelliarmus !", correct: true },
       { id: 3, text: "Expulso !", correct: false },
     ],
+    difficult: 1,
   },
   {
     id: 6,
@@ -121,6 +125,42 @@ const questions = [
   },
   {
     id: 11,
+    img: "Question31_1.png",
+    text: "Quel est le signe du zodiaque du jeune Harry Potter ?",
+    options: [
+      { id: 0, text: "Vierge", correct: false },
+      { id: 1, text: "Lion", correct: true },
+      { id: 2, text: "Balance", correct: false },
+      { id: 3, text: "Taureau", correct: false },
+    ],
+    difficult: 1,
+  },
+  {
+    id: 12,
+    img: "Question32_1.png",
+    text: "Quelle est la matière principalement enseignée par le Professeur Rogue dans la saga Harry Potter ?",
+    options: [
+      { id: 0, text: "Métamorphose", correct: false },
+      { id: 1, text: "Enchantement", correct: false },
+      { id: 2, text: "Potions", correct: true },
+      { id: 3, text: "Botanique", correct: false },
+    ],
+    difficult: 1,
+  },
+  {
+    id: 13,
+    img: "Question33_1.png",
+    text: "Quel est le prénom de Hagrid, le demi-géant de la saga Harry Potter ?",
+    options: [
+      { id: 0, text: "Remus", correct: false },
+      { id: 1, text: "Albus", correct: false },
+      { id: 2, text: "Serverus", correct: false },
+      { id: 3, text: "Rubeus", correct: true },
+    ],
+    difficult: 1,
+  },
+  {
+    id: 14,
     img: "Question1_2.png",
     text: "Quel est le village où ont été tués Lily et James Potter ?",
     options: [
@@ -132,7 +172,7 @@ const questions = [
     difficult: 2,
   },
   {
-    id: 12,
+    id: 15,
     img: "Question2_2.png",
     text: "Quel est le mot de passe pour rentrer dans la salle commune de Gryffondor ?",
     options: [
@@ -144,7 +184,7 @@ const questions = [
     difficult: 2,
   },
   {
-    id: 13,
+    id: 16,
     img: "Question3_2.png",
     text: "Qui est le fantôme de la maison Gryffondor ?",
     options: [
@@ -156,7 +196,7 @@ const questions = [
     difficult: 2,
   },
   {
-    id: 14,
+    id: 17,
     img: "Question4_2.png",
     text: "Quelle est la plaque d'immatriculation de la voiture volante ?",
     options: [
@@ -168,7 +208,7 @@ const questions = [
     difficult: 2,
   },
   {
-    id: 15,
+    id: 18,
     img: "Question5_2.png",
     text: "Comment s'appelle l'arbre dans lequel Ron et Harry arrivent-ils ?",
     options: [
@@ -180,7 +220,7 @@ const questions = [
     difficult: 2,
   },
   {
-    id: 16,
+    id: 19,
     img: "Question6_2.png",
     text: "Qui se fait pétrifier en premier ?",
     options: [
@@ -192,7 +232,7 @@ const questions = [
     difficult: 2,
   },
   {
-    id: 17,
+    id: 20,
     img: "Question7_2.png",
     text: "Comment s'appelle le livre qui s'attaque à Neville Londubat ?",
     options: [
@@ -204,7 +244,7 @@ const questions = [
     difficult: 2,
   },
   {
-    id: 18,
+    id: 21,
     img: "Question8_2.png",
     text: "Qui aide Sirius Black à s'introduire dans le château ?",
     options: [
@@ -216,7 +256,7 @@ const questions = [
     difficult: 2,
   },
   {
-    id: 19,
+    id: 22,
     img: "Question9_2.png",
     text: "Comment se prénomme le chat d'Hermione Granger ?",
     options: [
@@ -228,7 +268,7 @@ const questions = [
     difficult: 2,
   },
   {
-    id: 20,
+    id: 23,
     img: "Question10_2.png",
     text: "Qui se fait passer pour Alastor Maugrey à l'aide du Polynectar ?",
     options: [
@@ -240,7 +280,43 @@ const questions = [
     difficult: 2,
   },
   {
-    id: 21,
+    id: 24,
+    img: "Question34_2.png",
+    text: "Quelle est la formule du sortilège de mort dans la saga Harry Potter ?",
+    options: [
+      { id: 0, text: "Avada Kedavra", correct: true },
+      { id: 1, text: "Mortibus Rem", correct: false },
+      { id: 2, text: "Machina Fino", correct: false },
+      { id: 3, text: "Post Mortem", correct: false },
+    ],
+    difficult: 2,
+  },
+  {
+    id: 25,
+    img: "Question35_2.png",
+    text: "Quel acteur joue le rôle de Drago Malefoy dans Harry Potter ?",
+    options: [
+      { id: 0, text: "Jeff Rawie", correct: false },
+      { id: 1, text: "Rupert Grint", correct: false },
+      { id: 2, text: "Robbie Coltrane", correct: false },
+      { id: 3, text: "Tom Felton", correct: true },
+    ],
+    difficult: 2,
+  },
+  {
+    id: 26,
+    img: "Question36_2.png",
+    text: "Sur quelle partie du corps, Albus Dumbledore possède-t-il une cicatrice qui représente le plan du métro de Londres ?",
+    options: [
+      { id: 0, text: "Dans le bas du dos", correct: false },
+      { id: 1, text: "Sur l'avant bras", correct: false },
+      { id: 2, text: "Dans le creux de la main", correct: false },
+      { id: 3, text: "Au dessus du genoux", correct: true },
+    ],
+    difficult: 2,
+  },
+  {
+    id: 27,
     img: "Question1_3.png",
     text: "Comment s'appelle le contrôleur du Magicobus ?",
     options: [
@@ -252,7 +328,7 @@ const questions = [
     difficult: 3,
   },
   {
-    id: 22,
+    id: 28,
     img: "Question2_3.png",
     text: "Quel est le patronus de Ginny Weasley ?",
     options: [
@@ -264,7 +340,7 @@ const questions = [
     difficult: 3,
   },
   {
-    id: 23,
+    id: 29,
     img: "Question3_3.png",
     text: "Quel livre mordeur Harry essaie-t-il d'ouvrir au Chaudron Baveur ?",
     options: [
@@ -280,7 +356,7 @@ const questions = [
     difficult: 3,
   },
   {
-    id: 24,
+    id: 30,
     img: "Question4_3.png",
     text: "Après avoir été désarmé par Harry dans le manoir des Malefoy, quelle baguette Drago utilise-t-il ?",
     options: [
@@ -292,7 +368,7 @@ const questions = [
     difficult: 3,
   },
   {
-    id: 25,
+    id: 31,
     img: "Question5_3.png",
     text: "Qu'y a-t-il écrit à côté du sortilège de sectumsempra dans le livre de potions de Harry ?",
     options: [
@@ -304,7 +380,7 @@ const questions = [
     difficult: 3,
   },
   {
-    id: 26,
+    id: 32,
     img: "Question6_3.png",
     text: "Selon Hermione, qui est le jeune homme sur la photo dans la maison de Bathilda Tourdesac ?",
     options: [
@@ -316,7 +392,7 @@ const questions = [
     difficult: 3,
   },
   {
-    id: 27,
+    id: 33,
     img: "Question7_3.png",
     text: "Où transplanent Harry, Ron et Hermione après l'attaque des mangemorts pendant le mariage de Bill et Fleur ?",
     options: [
@@ -328,7 +404,7 @@ const questions = [
     difficult: 3,
   },
   {
-    id: 28,
+    id: 34,
     img: "Question8_3.png",
     text: "Dans Harry Potter et l'ordre du phénix, quelle lettre apparaît dans le ciel au-dessus de Poudlard pendant le feu d'artifice géant ?",
     options: [
@@ -340,7 +416,7 @@ const questions = [
     difficult: 3,
   },
   {
-    id: 29,
+    id: 35,
     img: "Question9_3.png",
     text: "Qui est le dernier champion à sortir du lac lors de la deuxième tâche du tournoi des trois sorciers ?",
     options: [
@@ -352,7 +428,7 @@ const questions = [
     difficult: 3,
   },
   {
-    id: 30,
+    id: 36,
     img: "Question10_3.png",
     text: "Dans Harry Potter à l'école des sorciers, qui dénonce Hagrid parce que celui-ci élève un bébé dragon dans sa cabane ?",
     options: [
@@ -360,6 +436,42 @@ const questions = [
       { id: 1, text: "Le professeur McGonagall", correct: false },
       { id: 2, text: "Rubeus Hagrid", correct: false },
       { id: 3, text: "Drago Malefoy", correct: true },
+    ],
+    difficult: 3,
+  },
+  {
+    id: 37,
+    img: "Question37_3.png",
+    text: "Qui garde Azkaban, la prison des sorciers dans la saga Harry Potter ?",
+    options: [
+      { id: 0, text: "Les goules", correct: false },
+      { id: 1, text: "Les épouvantards", correct: false },
+      { id: 2, text: "Les détraqueurs", correct: true },
+      { id: 3, text: "Les cérberes", correct: false },
+    ],
+    difficult: 3,
+  },
+  {
+    id: 38,
+    img: "Question38_3.png",
+    text: "En quelle année, Harry Potter et les Reliques de la Mort : 2ème partie est-il sorti au cinéma ?",
+    options: [
+      { id: 0, text: "2011", correct: true },
+      { id: 1, text: "2013", correct: false },
+      { id: 2, text: "2015", correct: false },
+      { id: 3, text: "2017", correct: false },
+    ],
+    difficult: 3,
+  },
+  {
+    id: 39,
+    img: "Question39_3.png",
+    text: "Quel professeur a la réputation d'avoir été champion de duel dans sa jeunesse ?",
+    options: [
+      { id: 0, text: "Rogue", correct: false },
+      { id: 1, text: "Lockart", correct: false },
+      { id: 2, text: "Flitwick", correct: true },
+      { id: 3, text: "Dumbledore", correct: false },
     ],
     difficult: 3,
   },
