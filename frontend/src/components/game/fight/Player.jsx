@@ -1,12 +1,12 @@
-import "../../../styles/CharFight.scss";
+import "../../../styles/Player.scss";
 
-function CharFight() {
+function Player() {
   return (
     <div className="opp-fight">
-      <h1 className="harry-potter-font fight-h1">Harry Potter</h1>
+      <h1 className="harry-potter-font fight-h1">Christopher</h1>
       <img src="harry-potter.jpg" alt="" className="fight-img" />
       <div className="fight-box">
-        <p>Harry Potter</p>
+        <p>Christopher</p>
         <div className="fight-rod-life-outer">
           <div className="fight-rod-life-inner">PLAYERLife</div>
         </div>
@@ -17,4 +17,4 @@ function CharFight() {
   );
 }
 
-export default CharFight;
+export default Player;

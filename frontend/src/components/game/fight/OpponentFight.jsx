@@ -1,4 +1,4 @@
-import "../../../styles/CharFight.scss";
+import "../../../styles/Player.scss";
 
 function OpponentFight() {
   return (

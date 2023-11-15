@@ -50,7 +50,7 @@ function Quizz({ data, questionNumber, setPage }) {
     }, 800);
 
     setTimeout(() => {
-      if (numberOfQuestion < 5) {
+      if (numberOfQuestion < 1) {
         setTimeout(() => {
           selectRandomQuestion();
           handleNumberOfQuestion();
