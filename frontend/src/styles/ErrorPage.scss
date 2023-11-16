@@ -1,0 +1,28 @@
+@keyframes blink {
+  0%,
+  25% {
+    color: #721c24;
+  }
+  26%,
+  50% {
+    color: #000000;
+  }
+  51%,
+  75% {
+    color: #721c24;
+  }
+  76%,
+  100% {
+    color: #000000;
+  }
+}
+
+.errorPage {
+  text-align: center;
+
+  p {
+    font-size: 50px;
+    font-weight: bold;
+    animation: blink 2s infinite;
+  }
+}
