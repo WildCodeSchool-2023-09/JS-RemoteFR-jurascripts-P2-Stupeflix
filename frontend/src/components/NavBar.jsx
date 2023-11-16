@@ -61,7 +61,7 @@ function NavBar() {
               <ul>
                 <li>
                   <Link to="/" className="menu-open-link">
-                    Hogwarts Day
+                    Home
                   </Link>
                 </li>
                 <li>
