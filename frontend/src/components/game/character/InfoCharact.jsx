@@ -1,10 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../../../styles/InfoCharact.scss";
 import { BsDash, BsInfo } from "react-icons/bs";
 import { useMediaQuery } from "@react-hook/media-query";
 
 function InfoCharact() {
   const isMobile = useMediaQuery("only screen and (min-width: 900px)");
+  const [selectedCharacter, setSelectedCharacter] = useState(null);
+
+  useEffect(() => {
+    const storedCharacter = sessionStorage.getItem(selectedCharacter);
+    if (storedCharacter) {
+      const parsedCharacter = JSON.parse(storedCharacter);
+      setSelectedCharacter(parsedCharacter);
+    }
+  }, []);
+
   const [infoChar, setInfoChar] = useState(true);
   const toggleInfoChar = () => {
     setInfoChar(!infoChar);
@@ -36,12 +46,14 @@ function InfoCharact() {
                   toggleIconI();
                 }}
               />
-              <p>Statistiques de votre personnage:</p>
-              <ul>
-                <li>Points de vie : 10</li>
-                <li>Points de force : 15</li>
-                <li>Points de défense : 3</li>
-              </ul>
+              <p>Statistiques de ton personnage:</p>
+              {selectedCharacter && (
+                <ul>
+                  <li>{selectedCharacter.life}</li>
+                  <li>{selectedCharacter.strength}</li>
+                  <li>{selectedCharacter.dexterity}</li>
+                </ul>
+              )}
             </div>
           )}
         </div>
