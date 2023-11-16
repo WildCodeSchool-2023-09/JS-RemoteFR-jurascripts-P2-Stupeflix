@@ -1,18 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "../../../styles/Fight.scss";
-import characterData from "./charactersData";
-import enemyData from "./enemysData";
 
 function Fight() {
   const [combatLog, setCombatLog] = useState([]);
   const [winner, setWinner] = useState(null);
+  const [showCombatLog, setShowCombatLog] = useState(true);
 
-  const randomEnemy = (enemys) => {
-    const randomIndex = Math.floor(Math.random() * enemys.length);
-    return enemys[randomIndex];
-  };
-  const [character, setCharacter] = useState(characterData[0]);
-  const [enemy, setEnemy] = useState(randomEnemy(enemyData));
+  const [character, setCharacter] = useState({
+    name: "Christopher",
+    strength: 15,
+    dexterity: 3,
+    life: 20,
+  });
+
+  const [enemy, setEnemy] = useState({
+    name: "Benoît le BG",
+    strength: 15,
+    dexterity: 3,
+    life: 20,
+  });
 
   useEffect(() => {
     const fightInterval = setInterval(() => {
@@ -42,12 +48,15 @@ function Fight() {
         setEnemy((prevEnemy) => ({ ...prevEnemy, life: enemyNewLife }));
 
         const roundDetail = `${character.name} inflige ${enemyDefenderDamage} dégâts à ${enemy.name}, et ${enemy.name} inflige ${characterDefenderDamage} dégâts à ${character.name}`;
-        setCombatLog((prevLog) => [...prevLog, roundDetail]);
+
+        // Ajout de la nouvelle ligne tout en supprimant les anciennes
+        setCombatLog([roundDetail]);
 
         if (characterNewLife <= 0 || enemyNewLife <= 0) {
           const winnerName =
             characterNewLife > enemyNewLife ? character.name : enemy.name;
           setWinner(`${winnerName} gagne !`);
+          setShowCombatLog(false);
           clearInterval(fightInterval);
         }
       } else {
@@ -60,15 +69,18 @@ function Fight() {
 
   return (
     <div className="combatlog">
-      <h2 className="combatlog harry-potter-font">
-        Détails du combat {enemy.name}:
-      </h2>
-      {combatLog.map((details) => (
-        <p key={details + 1} className="combatslog">
-          {details}
-        </p>
-      ))}
-      {winner && <h2 className="winner harry-potter-font">{winner}</h2>}
+      {showCombatLog ? (
+        <>
+          <h2 className="combatlog harry-potter-font">Détails du combat :</h2>
+          {combatLog.map((details) => (
+            <p key={details + 1} className="combatslog">
+              {details}
+            </p>
+          ))}
+        </>
+      ) : (
+        winner && <h2 className="winner harry-potter-font">{winner}</h2>
+      )}
     </div>
   );
 }
