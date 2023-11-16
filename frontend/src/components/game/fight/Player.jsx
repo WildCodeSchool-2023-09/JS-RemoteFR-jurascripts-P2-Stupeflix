@@ -1,10 +1,10 @@
 import "../../../styles/Player.scss";
-import PropTypes from "prop-types";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useMediaQuery } from "@react-hook/media-query";
 
-function Player({ selectedCharacter, setSelectedCharacter }) {
+function Player() {
   const isMobile = useMediaQuery("only screen and (min-width: 900px)");
+  const [selectedCharacter, setSelectedCharacter] = useState(null);
 
   useEffect(() => {
     const storedCharacter = sessionStorage.getItem(selectedCharacter);
@@ -56,16 +56,5 @@ function Player({ selectedCharacter, setSelectedCharacter }) {
     </div>
   );
 }
-
-Player.propTypes = {
-  selectedCharacter: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    life: PropTypes.number.isRequired,
-    strength: PropTypes.number.isRequired,
-    dexterity: PropTypes.number.isRequired,
-  }).isRequired,
-  setSelectedCharacter: PropTypes.func.isRequired,
-};
 
 export default Player;
