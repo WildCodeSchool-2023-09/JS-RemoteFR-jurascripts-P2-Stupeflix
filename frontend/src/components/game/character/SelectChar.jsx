@@ -1,9 +1,18 @@
 import "../../../styles/SelectChar.scss";
 import PropTypes from "prop-types";
 import { useMediaQuery } from "@react-hook/media-query";
+import { useState } from "react";
+import characterData from "../fight/charactersData";
 
 function SelectChar({ setPage }) {
   const isMobile = useMediaQuery("only screen and (min-width: 900px)");
+
+  const [selectedCharacter, setSelectedCharacter] = useState(null);
+  const handleCharacterSelect = (character) => {
+    setSelectedCharacter(character);
+    sessionStorage.setItem(selectedCharacter, JSON.stringify(character));
+    setPage({ name: "DisplayQuizz", id: null });
+  };
   return (
     <div className="container-game">
       {isMobile ? (
@@ -13,122 +22,44 @@ function SelectChar({ setPage }) {
             partie
           </h2>
           <div className="container-select">
-            <div
-              className="container-select-1"
-              onClick={() => setPage({ name: "DisplayQuizz", id: null })}
-              onKeyDown={() => setPage({ name: "DisplayQuizz", id: null })}
-              role="presentation"
-            >
-              <img
-                src="harry-potter.jpg"
-                alt=""
-                className="container-select-img"
-              />
-              <h2 className="harry-potter-font">Harry Potter</h2>
-              <p>Maison : Gryffondor</p>
-              <p>Caractéristique : 10 points de force supplémentaire</p>
-            </div>
-            <div
-              className="container-select-1"
-              onClick={() => setPage({ name: "DisplayQuizz", id: null })}
-              onKeyDown={() => setPage({ name: "DisplayQuizz", id: null })}
-              role="presentation"
-            >
-              <img
-                src="luna-lovegood.png"
-                alt=""
-                className="container-select-img"
-              />
-              <h2 className="harry-potter-font">Luna Lovegood</h2>
-              <p>Maison : Poufsouffle</p>
-              <p>Caractéristique : 10 points de vie supplémentaire</p>
-            </div>
-            <div
-              className="container-select-1"
-              onClick={() => setPage({ name: "DisplayQuizz", id: null })}
-              onKeyDown={() => setPage({ name: "DisplayQuizz", id: null })}
-              role="presentation"
-            >
-              <img
-                src="cedric-digory.png"
-                alt=""
-                className="container-select-img"
-              />
-              <h2 className="harry-potter-font">Cedric Diggory</h2>
-              <p>Maison : Serdaigle</p>
-              <p>Caractéristique : 10 points de défense supplémentaire</p>
-            </div>
-            <div
-              className="container-select-1"
-              onClick={() => setPage({ name: "DisplayQuizz", id: null })}
-              onKeyDown={() => setPage({ name: "DisplayQuizz", id: null })}
-              role="presentation"
-            >
-              <img
-                src="drago-malfoy.png"
-                alt=""
-                className="container-select-img"
-              />
-              <h2 className="harry-potter-font">Draco Malfoy</h2>
-              <p>Maison : Serpentard</p>
-              <p>Caractéristique : 10 points inconnu supplémentaire</p>
-            </div>
+            {characterData.map((character) => (
+              <div
+                key={character.name}
+                className="container-select-1"
+                onClick={() => handleCharacterSelect(character)}
+                onKeyDown={() => handleCharacterSelect(character)}
+                role="presentation"
+              >
+                <img
+                  src={character.image}
+                  alt=""
+                  className="container-select-img"
+                />
+                <h2 className="harry-potter-font">{character.name}</h2>
+                <p>{character.house}</p>
+                <p>{character.characteristic}</p>
+              </div>
+            ))}
           </div>
         </>
       ) : (
         <div className="container-select">
-          <div
-            className="container-select-2"
-            onClick={() => setPage({ name: "DisplayQuizz", id: null })}
-            onKeyDown={() => setPage({ name: "DisplayQuizz", id: null })}
-            role="presentation"
-          >
-            <img
-              src="harry-potter.jpg"
-              alt=""
-              className="container-select-img"
-            />
-            <h2 className="harry-potter-font">Harry Potter</h2>
-          </div>
-          <div
-            className="container-select-2"
-            onClick={() => setPage({ name: "DisplayQuizz", id: null })}
-            onKeyDown={() => setPage({ name: "DisplayQuizz", id: null })}
-            role="presentation"
-          >
-            <img
-              src="luna-lovegood.png"
-              alt=""
-              className="container-select-img"
-            />
-            <h2 className="harry-potter-font">Luna Lovegood</h2>
-          </div>
-          <div
-            className="container-select-2"
-            onClick={() => setPage({ name: "DisplayQuizz", id: null })}
-            onKeyDown={() => setPage({ name: "DisplayQuizz", id: null })}
-            role="presentation"
-          >
-            <img
-              src="cedric-digory.png"
-              alt=""
-              className="container-select-img"
-            />
-            <h2 className="harry-potter-font">Cedric Diggory</h2>
-          </div>
-          <div
-            className="container-select-2"
-            onClick={() => setPage({ name: "DisplayQuizz", id: null })}
-            onKeyDown={() => setPage({ name: "DisplayQuizz", id: null })}
-            role="presentation"
-          >
-            <img
-              src="drago-malfoy.png"
-              alt=""
-              className="container-select-img"
-            />
-            <h2 className="harry-potter-font">Drago Malfoy</h2>
-          </div>
+          {characterData.map((character) => (
+            <div
+              key={character.name}
+              className="container-select-2"
+              onClick={() => handleCharacterSelect(character)}
+              onKeyDown={() => handleCharacterSelect(character)}
+              role="presentation"
+            >
+              <img
+                src={character.image}
+                alt=""
+                className="container-select-img"
+              />
+              <h2 className="harry-potter-font">{character.name}</h2>
+            </div>
+          ))}
         </div>
       )}
     </div>
