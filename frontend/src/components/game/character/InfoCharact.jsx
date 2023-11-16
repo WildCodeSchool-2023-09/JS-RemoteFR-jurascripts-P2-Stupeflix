@@ -54,7 +54,7 @@ function InfoCharact() {
                   </p>
                   <ul>
                     <li>Vie: {selectedCharacter.life}</li>
-                    <li>Force: {selectedCharacter.strength}</li>
+                    <li>FAttaque: {selectedCharacter.strength}</li>
                     <li>Défense: {selectedCharacter.dexterity}</li>
                   </ul>
                 </>
@@ -78,8 +78,8 @@ function InfoCharact() {
                   <p>{selectedCharacter.name}:</p>
                   <ul>
                     <li>Vie: {selectedCharacter.life}</li>
-                    <li>Attaque: {selectedCharacter.strength}</li>
-                    <li>Défense: {selectedCharacter.dexterity}</li>
+                    <li>Atq: {selectedCharacter.strength}</li>
+                    <li>Déf: {selectedCharacter.dexterity}</li>
                   </ul>
                 </>
               )}

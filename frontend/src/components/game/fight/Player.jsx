@@ -1,10 +1,10 @@
 import "../../../styles/Player.scss";
-import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import { useEffect } from "react";
 import { useMediaQuery } from "@react-hook/media-query";
 
-function Player() {
+function Player({ selectedCharacter, setSelectedCharacter }) {
   const isMobile = useMediaQuery("only screen and (min-width: 900px)");
-  const [selectedCharacter, setSelectedCharacter] = useState(null);
 
   useEffect(() => {
     const storedCharacter = sessionStorage.getItem(selectedCharacter);
@@ -45,16 +45,27 @@ function Player() {
               <div className="fight-box">
                 <div className="fight-rod-life-outer">
                   <div className="fight-rod-life-inner">
-                    {selectedCharacter.life}
+                    Vie:{selectedCharacter.life}
                   </div>
                 </div>
-                <p className="fight-p2">{selectedCharacter.strength}</p>
-                <p className="fight-p-3">{selectedCharacter.dexterity}</p>
+                <p className="fight-p2">Atq:{selectedCharacter.strength}</p>
+                <p className="fight-p-3">Def:{selectedCharacter.dexterity}</p>
               </div>
             </>
           )}
     </div>
   );
 }
+
+Player.propTypes = {
+  selectedCharacter: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    life: PropTypes.number.isRequired,
+    strength: PropTypes.number.isRequired,
+    dexterity: PropTypes.number.isRequired,
+  }).isRequired,
+  setSelectedCharacter: PropTypes.func.isRequired,
+};
 
 export default Player;

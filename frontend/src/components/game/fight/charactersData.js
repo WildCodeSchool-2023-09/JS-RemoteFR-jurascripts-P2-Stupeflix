@@ -1,6 +1,6 @@
 const characterData = [
   {
-    id: 1,
+    id: 0,
     name: "Harry Potter",
     house: "Gryffondor",
     characteristic: "Caractéristique : 10 points de force supplémentaire",
@@ -10,7 +10,7 @@ const characterData = [
     life: 20,
   },
   {
-    id: 2,
+    id: 1,
     name: "Luna Lovegood",
     house: "Serdaigle",
     characteristic: "Caractéristique : 10 points de vie supplémentaire",
@@ -20,7 +20,7 @@ const characterData = [
     life: 30,
   },
   {
-    id: 3,
+    id: 2,
     name: "Cedric Diggory",
     house: "Poufsouffle",
     characteristic: "Caractéristique : 10 points de défense supplémentaire",
@@ -30,7 +30,7 @@ const characterData = [
     life: 20,
   },
   {
-    id: 4,
+    id: 3,
     name: "Draco Malfoy",
     house: "Serpentard",
     characteristic: "Caractéristique : 10 points de réparti",
