@@ -1,19 +1,12 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import "../../../styles/Fight.scss";
 import characterData from "./charactersData";
-import enemyData from "./enemysData";
 
-function Fight() {
+function Fight({ enemy, setEnemy }) {
   const [combatLog, setCombatLog] = useState([]);
   const [winner, setWinner] = useState(null);
-
-  const randomEnemy = (enemies) => {
-    const randomIndex = Math.floor(Math.random() * enemies.length);
-    return enemies[randomIndex];
-  };
-
   const [character, setCharacter] = useState(characterData[0]);
-  const [enemy, setEnemy] = useState(randomEnemy(enemyData));
 
   useEffect(() => {
     const fightInterval = setInterval(() => {
@@ -81,4 +74,14 @@ function Fight() {
   );
 }
 
+Fight.propTypes = {
+  enemy: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    life: PropTypes.number.isRequired,
+    strength: PropTypes.number.isRequired,
+    dexterity: PropTypes.number.isRequired,
+  }).isRequired,
+  setEnemy: PropTypes.func.isRequired,
+};
 export default Fight;
