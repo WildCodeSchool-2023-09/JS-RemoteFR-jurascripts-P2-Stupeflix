@@ -9,6 +9,7 @@ function InfoCharact() {
 
   useEffect(() => {
     const storedCharacter = sessionStorage.getItem(selectedCharacter);
+
     if (storedCharacter) {
       const parsedCharacter = JSON.parse(storedCharacter);
       setSelectedCharacter(parsedCharacter);
@@ -46,13 +47,17 @@ function InfoCharact() {
                   toggleIconI();
                 }}
               />
-              <p>Statistiques de ton personnage:</p>
               {selectedCharacter && (
-                <ul>
-                  <li>{selectedCharacter.life}</li>
-                  <li>{selectedCharacter.strength}</li>
-                  <li>{selectedCharacter.dexterity}</li>
-                </ul>
+                <>
+                  <p>
+                    Statistiques de ton personnage "{selectedCharacter.name}":
+                  </p>
+                  <ul>
+                    <li>Vie: {selectedCharacter.life}</li>
+                    <li>Force: {selectedCharacter.strength}</li>
+                    <li>Défense: {selectedCharacter.dexterity}</li>
+                  </ul>
+                </>
               )}
             </div>
           )}
@@ -68,12 +73,16 @@ function InfoCharact() {
                   toggleIconI();
                 }}
               />
-              <p>Stats:</p>
-              <ul>
-                <li>Vie: 10</li>
-                <li>Atq: 15</li>
-                <li>Def: 3</li>
-              </ul>
+              {selectedCharacter && (
+                <>
+                  <p>{selectedCharacter.name}:</p>
+                  <ul>
+                    <li>Vie: {selectedCharacter.life}</li>
+                    <li>Attaque: {selectedCharacter.strength}</li>
+                    <li>Défense: {selectedCharacter.dexterity}</li>
+                  </ul>
+                </>
+              )}
             </div>
           )}
         </div>
