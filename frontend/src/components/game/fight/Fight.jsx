@@ -49,7 +49,6 @@ function Fight() {
 
         const roundDetail = `${character.name} inflige ${enemyDefenderDamage} dégâts à ${enemy.name}, et ${enemy.name} inflige ${characterDefenderDamage} dégâts à ${character.name}`;
 
-        // Ajout de la nouvelle ligne tout en supprimant les anciennes
         setCombatLog([roundDetail]);
 
         if (characterNewLife <= 0 || enemyNewLife <= 0) {
