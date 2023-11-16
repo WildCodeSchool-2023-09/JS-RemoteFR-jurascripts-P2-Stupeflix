@@ -13,13 +13,11 @@ function DisplayQuizz({ setPage }) {
       <InfoCharact />
       <div>
         <div className="container-game">
-          <div className="main">
-            <Quizz
-              data={questions}
-              questionNumber={questionNumber}
-              setPage={setPage}
-            />
-          </div>
+          <Quizz
+            data={questions}
+            questionNumber={questionNumber}
+            setPage={setPage}
+          />
         </div>
       </div>
     </>

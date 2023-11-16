@@ -16,7 +16,7 @@ function DisplayFight() {
           {showFight ? (
             <Fight />
           ) : (
-            <>
+            <div className="versus">
               <h1 className="harry-potter-font fight-vs">VS</h1>
               <button
                 type="button"
@@ -29,7 +29,7 @@ function DisplayFight() {
               >
                 Attaquer
               </button>
-            </>
+            </div>
           )}
           <OpponentFight />
         </div>

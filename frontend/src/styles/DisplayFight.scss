@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45%;
+  width: 100%;
   height: auto;
   font-size: 15vw;
+  padding: 5%;
   color: var(--color3);
   background-color: rgba(255, 255, 255, 0.409);
   border: 1px solid var(--color2);
@@ -29,8 +30,10 @@
   height: 80vh;
   width: 100%;
   margin-bottom: 5%;
-  // @media screen and (max-width: 900px) {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
+  .versus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
