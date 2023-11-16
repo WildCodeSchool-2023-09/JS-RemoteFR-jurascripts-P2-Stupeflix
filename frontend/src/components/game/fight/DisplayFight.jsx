@@ -8,10 +8,9 @@ import enemyData from "./enemysData";
 function DisplayFight() {
   const [fightEnd, setFightEnd] = useState(true);
   const [showFight, setShowFight] = useState(false);
-  const [selectedCharacter, setSelectedCharacter] = useState(null);
 
   const randomEnemy = (enemies) => {
-    const randomIndex = Math.floor(Math.random() * enemies.length) + 1;
+    const randomIndex = Math.floor(Math.random() * enemies.length);
     return enemies[randomIndex];
   };
 
@@ -21,17 +20,9 @@ function DisplayFight() {
     <div className="container-game">
       {fightEnd ? (
         <div className="fgt-div-1">
-          <Player
-            selectedCharacter={selectedCharacter}
-            setSelectedCharacter={setSelectedCharacter}
-          />
+          <Player />
           {showFight ? (
-            <Fight
-              character={selectedCharacter}
-              setCharacter={setSelectedCharacter}
-              enemy={enemy}
-              setEnemy={setEnemy}
-            />
+            <Fight enemy={enemy} setEnemy={setEnemy} />
           ) : (
             <div className="versus">
               <h1 className="harry-potter-font fight-vs">VS</h1>
@@ -52,10 +43,7 @@ function DisplayFight() {
         </div>
       ) : (
         <div className="fgt-div-1">
-          <Player
-            selectedCharacter={selectedCharacter}
-            setSelectedCharacter={setSelectedCharacter}
-          />
+          <Player />
           <Fight enemy={enemy} setEnemy={setEnemy} />
           <OpponentFight enemy={enemy} />
         </div>
