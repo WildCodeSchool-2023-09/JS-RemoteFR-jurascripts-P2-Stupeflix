@@ -82,10 +82,14 @@
   background-color: rgba(255, 255, 255, 0.908);
   border: 0.1rem orange solid;
   border-radius: 20%;
+  cursor: pointer;
 
   &:hover {
-    background-color: orange;
-    cursor: pointer;
+    background-color: rgb(255, 184, 51);
+  }
+
+  &:active {
+    background-color: rgb(255, 166, 0);
   }
 }
 
@@ -128,6 +132,7 @@
 
         &:hover {
           color: var(--color3);
+          border-bottom: 1px var(--color3) solid;
         }
       }
     }
