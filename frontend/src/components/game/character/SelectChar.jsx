@@ -9,8 +9,25 @@ function SelectChar({ setPage }) {
 
   const [selectedCharacter, setSelectedCharacter] = useState(null);
   const handleCharacterSelect = (character) => {
-    setSelectedCharacter(character);
-    sessionStorage.setItem(selectedCharacter, JSON.stringify(character));
+    setSelectedCharacter({
+      name: character.name,
+      house: character.house,
+      characteristic: character.characteristic,
+      life: character.life,
+      strength: character.strength,
+      dexterity: character.dexterity,
+    });
+    sessionStorage.setItem(
+      selectedCharacter,
+      JSON.stringify({
+        name: character.name,
+        house: character.house,
+        characteristic: character.characteristic,
+        life: character.life,
+        strength: character.strength,
+        dexterity: character.dexterity,
+      })
+    );
     setPage({ name: "DisplayQuizz", id: null });
   };
   return (
