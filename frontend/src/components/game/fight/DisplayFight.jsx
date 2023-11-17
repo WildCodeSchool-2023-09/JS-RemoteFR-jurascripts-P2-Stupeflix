@@ -6,7 +6,7 @@ import Fight from "./Fight";
 import enemyData from "./enemysData";
 
 function DisplayFight() {
-  const [fightEnd, setFightEnd] = useState(true);
+  const [fightEnd, setFightEnd] = useState(false);
   const [showFight, setShowFight] = useState(false);
 
   const randomEnemy = (enemies) => {
