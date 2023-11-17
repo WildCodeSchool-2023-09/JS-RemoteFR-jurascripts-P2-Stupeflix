@@ -25,18 +25,24 @@ function DisplayFight() {
             <Fight enemy={enemy} setEnemy={setEnemy} />
           ) : (
             <div className="versus">
-              <h1 className="harry-potter-font fight-vs">VS</h1>
-              <button
-                type="button"
+              <h1
+                className="harry-potter-font fight-vs"
                 onClick={() => {
                   setFightEnd(false);
                   setTimeout(() => {
                     setShowFight(true);
                   }, 5000);
                 }}
+                onKeyDown={() => {
+                  setFightEnd(false);
+                  setTimeout(() => {
+                    setShowFight(true);
+                  }, 5000);
+                }}
+                role="presentation"
               >
-                Attaquer
-              </button>
+                VS
+              </h1>
             </div>
           )}
           <OpponentFight enemy={enemy} />
