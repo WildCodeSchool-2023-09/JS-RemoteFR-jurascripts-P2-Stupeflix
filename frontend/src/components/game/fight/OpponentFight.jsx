@@ -9,7 +9,7 @@ function OpponentFight({ enemy }) {
       {isMobile ? (
         <>
           <h1 className="harry-potter-font fight-h1">{enemy.name}</h1>
-          <img src="luna-lovegood.png" alt="" className="fight-img" />
+          <img src={enemy.img} alt="" className="fight-img" />
           <div className="fight-box">
             <div className="fight-rod-life-outer">
               <div className="fight-rod-life-inner">{enemy.life}</div>
@@ -37,7 +37,7 @@ function OpponentFight({ enemy }) {
 OpponentFight.propTypes = {
   enemy: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    image: PropTypes.string,
+    img: PropTypes.string.isRequired,
     life: PropTypes.number.isRequired,
     strength: PropTypes.number.isRequired,
     dexterity: PropTypes.number.isRequired,
