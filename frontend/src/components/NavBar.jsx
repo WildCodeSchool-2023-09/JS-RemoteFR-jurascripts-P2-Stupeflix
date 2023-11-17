@@ -33,7 +33,7 @@ function NavBar() {
             </li>
             <li className="container-nav-li">
               <Link to="/about" className="container-nav-link">
-                À Propos
+                A Propos
               </Link>
             </li>
           </ul>
@@ -71,7 +71,7 @@ function NavBar() {
                 </li>
                 <li>
                   <Link to="/about" className="menu-open-link">
-                    À Propos
+                    A Propos
                   </Link>
                 </li>
               </ul>

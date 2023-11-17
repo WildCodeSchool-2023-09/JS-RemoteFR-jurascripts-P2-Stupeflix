@@ -79,7 +79,6 @@ function Quizz({ data, questionNumber, setPage }) {
           >
             Fight
           </button>
-          <p>Votre score sera ajouté aux statistiques de votre personnage</p>
         </div>
       ) : (
         <div className="question-container">
