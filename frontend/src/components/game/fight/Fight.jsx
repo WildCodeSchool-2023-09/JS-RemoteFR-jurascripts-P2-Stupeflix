@@ -31,7 +31,7 @@ function Fight({ enemy, setEnemy }) {
           life: characterNewLife,
         }));
         setEnemy((prevEnemy) => ({ ...prevEnemy, life: enemyNewLife }));
-        const roundDetail = `${character.name} inflige ${enemyDefenderDamage} dégâts à ${enemy.name} et ${enemy.name} inflige ${characterDefenderDamage} dégâts à ${character.name}`;
+        const roundDetail = `Vous infligez ${enemyDefenderDamage} dégâts à ${enemy.name} et ${enemy.name} vous inflige ${characterDefenderDamage} dégâts`;
         setCombatLog((prevLog) => [...prevLog, roundDetail]);
         if (characterNewLife <= 0 || enemyNewLife <= 0) {
           const winnerName =
