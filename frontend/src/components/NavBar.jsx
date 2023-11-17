@@ -50,7 +50,7 @@ function NavBar() {
             />
           )}
           {menu && (
-            <div className="menu-open">
+            <div className="menu-open harry-potter-font">
               <IoClose
                 className="close"
                 onClick={() => {
