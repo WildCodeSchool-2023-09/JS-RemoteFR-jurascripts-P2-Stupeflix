@@ -75,7 +75,7 @@ function Fight({ enemy, setEnemy }) {
 Fight.propTypes = {
   enemy: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
     life: PropTypes.number.isRequired,
     strength: PropTypes.number.isRequired,
     dexterity: PropTypes.number.isRequired,
