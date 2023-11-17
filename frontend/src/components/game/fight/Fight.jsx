@@ -31,7 +31,7 @@ function Fight({ enemy, setEnemy }) {
           life: characterNewLife,
         }));
         setEnemy((prevEnemy) => ({ ...prevEnemy, life: enemyNewLife }));
-        const roundDetail = `${character.name} inflige ${enemyDefenderDamage} dégâts à ${enemy.name}, et ${enemy.name} inflige ${characterDefenderDamage} dégâts à ${character.name}`;
+        const roundDetail = `${character.name} inflige ${enemyDefenderDamage} dégâts à ${enemy.name} et ${enemy.name} inflige ${characterDefenderDamage} dégâts à ${character.name}`;
         setCombatLog((prevLog) => [...prevLog, roundDetail]);
         if (characterNewLife <= 0 || enemyNewLife <= 0) {
           const winnerName =
@@ -58,9 +58,7 @@ function Fight({ enemy, setEnemy }) {
     <div className="combatlog">
       {showCombatLog ? (
         <>
-          <h2 className="combatlog harry-potter-font">
-            Détails du combat {enemy.name}:
-          </h2>
+          <h2 className="combatlog harry-potter-font">Détails du combat :</h2>
           {combatLog.map((details) => (
             <p key={details + 1} className="combatslog">
               {details}

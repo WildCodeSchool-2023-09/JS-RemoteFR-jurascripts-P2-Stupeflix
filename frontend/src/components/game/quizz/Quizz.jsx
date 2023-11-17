@@ -67,7 +67,11 @@ function Quizz({ data, questionNumber, setPage }) {
       {showResults ? (
         <div className="final-result">
           <h1 className="harry-potter-font">Score Final</h1>
-          <h3>Votre score est de {score} point(s)</h3>
+          {score <= 1 ? (
+            <h3>Votre score est de {score} point</h3>
+          ) : (
+            <h3>Votre score est de {score} points</h3>
+          )}
           <button
             type="button"
             onClick={() => setPage({ name: "DisplayFight", id: null })}
@@ -75,13 +79,13 @@ function Quizz({ data, questionNumber, setPage }) {
           >
             Fight
           </button>
-          <p>Ton score sera ajouté aux stats de ton personnage</p>
+          <p>Votre score sera ajouté aux statistiques de votre personnage</p>
         </div>
       ) : (
         <div className="question-container">
-          <h1 className="harry-potter-font">Quizz Selectif</h1>
+          <h1 className="harry-potter-font">Quizz Sélectif</h1>
           <span>{timer}</span>
-          <h2>{score}Pts</h2>
+          {score <= 1 ? <h2>{score} Point</h2> : <h2>{score} Points</h2>}
           <div className="question">{question?.text}</div>
           <picture>
             <img
