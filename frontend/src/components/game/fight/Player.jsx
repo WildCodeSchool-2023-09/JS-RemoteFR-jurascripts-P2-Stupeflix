@@ -16,46 +16,43 @@ function Player() {
   }, []);
 
   return (
-    <div>
-      {isMobile ? (
-        <div className="opp-fight">
-          {selectedCharacter && (
+    <div className="opp-fight">
+      {isMobile
+        ? selectedCharacter && (
             <>
               <h1 className="harry-potter-font fight-h1">
                 {selectedCharacter.name}
               </h1>
-              <img src="harry-potter.jpg" alt="" className="fight-img" />
+              <img src={selectedCharacter.image} alt="" className="fight-img" />
               <div className="fight-box">
                 <div className="fight-rod-life-outer">
                   <div className="fight-rod-life-inner">
                     {selectedCharacter.life}
                   </div>
                 </div>
-                <p className="fight-p2">{selectedCharacter.strength}</p>
-                <p className="fight-p-3">{selectedCharacter.dexterity}</p>
+                <p className="fight-p2">Attaque:{selectedCharacter.strength}</p>
+                <p className="fight-p-3">
+                  Défense:{selectedCharacter.dexterity}
+                </p>
               </div>
             </>
-          )}
-        </div>
-      ) : (
-        <div className="opp-fight">
-          {selectedCharacter && (
+          )
+        : selectedCharacter && (
             <>
-              <img src="harry-potter.jpg" alt="" className="fight-img" />
+              <h1 className="harry-potter-font fight-h1">
+                {selectedCharacter.name}
+              </h1>
               <div className="fight-box">
-                <p>{selectedCharacter.name}</p>
                 <div className="fight-rod-life-outer">
                   <div className="fight-rod-life-inner">
-                    {selectedCharacter.life}
+                    Vie:{selectedCharacter.life}
                   </div>
                 </div>
-                <p className="fight-p2">{selectedCharacter.strength}</p>
-                <p className="fight-p-3">{selectedCharacter.dexterity}</p>
+                <p className="fight-p2">Atq:{selectedCharacter.strength}</p>
+                <p className="fight-p-3">Def:{selectedCharacter.dexterity}</p>
               </div>
             </>
           )}
-        </div>
-      )}
     </div>
   );
 }

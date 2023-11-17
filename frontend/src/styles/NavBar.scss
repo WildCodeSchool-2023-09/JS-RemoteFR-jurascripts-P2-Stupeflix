@@ -5,7 +5,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4%;
 }
 
 .container-nav-ul {
@@ -74,24 +73,33 @@
 }
 
 .menu {
-  position: absolute;
-  margin-top: 5%;
-  margin-left: 5%;
-  font-size: 4vw;
-  width: 5%;
-  background-color: rgba(255, 255, 255, 0.421);
+  position: fixed;
+  margin-top: 1%;
+  margin-left: 1%;
+  font-size: 6vw;
+  width: 7%;
+  background-color: rgba(255, 255, 255, 0.908);
   border: 0.1rem orange solid;
   border-radius: 20%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(255, 184, 51);
+  }
+
+  &:active {
+    background-color: rgb(255, 166, 0);
+  }
 }
 
 .menu-open {
-  position: absolute;
-  margin-top: 5%;
-  margin-left: 5%;
-  width: 15%;
-  background-color: rgba(255, 255, 255, 0.421);
+  position: fixed;
+  margin-top: 1%;
+  margin-left: 1%;
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.908);
   border: 0.1rem orange solid;
-  border-radius: 10%;
+  border-radius: 4%;
 
   .close {
     margin-top: 5%;
@@ -99,16 +107,38 @@
     background-color: rgba(255, 0, 0, 0.421);
     border: 0.1rem rgb(255, 0, 0) solid;
     border-radius: 50%;
+
+    &:hover {
+      background-color: rgb(198, 1, 1);
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: rgb(255, 0, 0);
+    }
   }
 
   ul {
+    margin-top: 10%;
     padding: 5%;
+    text-align: center;
+    line-height: 1.8;
     li {
       list-style-type: none;
       .menu-open-link {
         color: black;
         text-decoration: none;
+        font-size: 5vw;
+
+        &:hover {
+          color: var(--color3);
+          border-bottom: 1px var(--color3) solid;
+        }
       }
     }
+  }
+
+  &:hover {
+    background-color: rgb(255, 255, 255);
   }
 }

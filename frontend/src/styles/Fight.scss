@@ -1,5 +1,7 @@
 .combatlog {
   width: 80%;
+  padding: 0.5rem;
+  text-align: center;
   color: var(--color3);
   border: 1px solid var(--color2);
   background: radial-gradient(
@@ -25,4 +27,5 @@
 }
 .winner {
   font-size: 3rem;
+  text-align: center;
 }

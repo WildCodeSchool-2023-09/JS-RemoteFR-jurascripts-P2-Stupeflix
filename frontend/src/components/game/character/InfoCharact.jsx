@@ -16,12 +16,12 @@ function InfoCharact() {
     }
   }, []);
 
-  const [infoChar, setInfoChar] = useState(true);
+  const [infoChar, setInfoChar] = useState(false);
   const toggleInfoChar = () => {
     setInfoChar(!infoChar);
   };
 
-  const [iconI, setIconI] = useState(false);
+  const [iconI, setIconI] = useState(true);
   const toggleIconI = () => {
     setIconI(!iconI);
   };
@@ -49,12 +49,10 @@ function InfoCharact() {
               />
               {selectedCharacter && (
                 <>
-                  <p>
-                    Statistiques de ton personnage "{selectedCharacter.name}":
-                  </p>
+                  <p>Statistiques de {selectedCharacter.name}:</p>
                   <ul>
                     <li>Vie: {selectedCharacter.life}</li>
-                    <li>Force: {selectedCharacter.strength}</li>
+                    <li>Attaque: {selectedCharacter.strength}</li>
                     <li>Défense: {selectedCharacter.dexterity}</li>
                   </ul>
                 </>
@@ -78,8 +76,8 @@ function InfoCharact() {
                   <p>{selectedCharacter.name}:</p>
                   <ul>
                     <li>Vie: {selectedCharacter.life}</li>
-                    <li>Attaque: {selectedCharacter.strength}</li>
-                    <li>Défense: {selectedCharacter.dexterity}</li>
+                    <li>Atq: {selectedCharacter.strength}</li>
+                    <li>Déf: {selectedCharacter.dexterity}</li>
                   </ul>
                 </>
               )}

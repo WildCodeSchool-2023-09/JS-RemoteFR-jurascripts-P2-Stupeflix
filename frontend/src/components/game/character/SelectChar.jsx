@@ -13,6 +13,7 @@ function SelectChar({ setPage }) {
       name: character.name,
       house: character.house,
       characteristic: character.characteristic,
+      image: character.image,
       life: character.life,
       strength: character.strength,
       dexterity: character.dexterity,
@@ -23,6 +24,7 @@ function SelectChar({ setPage }) {
         name: character.name,
         house: character.house,
         characteristic: character.characteristic,
+        image: character.image,
         life: character.life,
         strength: character.strength,
         dexterity: character.dexterity,
@@ -35,8 +37,8 @@ function SelectChar({ setPage }) {
       {isMobile ? (
         <>
           <h2 className="h2">
-            Clique sur le personnage de ton choix pour l'incarner durant ta
-            partie
+            Cliquez sur le personnage de votre choix pour l'incarner durant
+            votre partie
           </h2>
           <div className="container-select">
             {characterData.map((character) => (

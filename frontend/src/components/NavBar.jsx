@@ -33,7 +33,7 @@ function NavBar() {
             </li>
             <li className="container-nav-li">
               <Link to="/about" className="container-nav-link">
-                About Us
+                À Propos
               </Link>
             </li>
           </ul>
@@ -50,7 +50,7 @@ function NavBar() {
             />
           )}
           {menu && (
-            <div className="menu-open">
+            <div className="menu-open harry-potter-font">
               <IoClose
                 className="close"
                 onClick={() => {
@@ -61,7 +61,7 @@ function NavBar() {
               <ul>
                 <li>
                   <Link to="/" className="menu-open-link">
-                    Hogwarts Day
+                    Accueil
                   </Link>
                 </li>
                 <li>
@@ -71,7 +71,7 @@ function NavBar() {
                 </li>
                 <li>
                   <Link to="/about" className="menu-open-link">
-                    About Us
+                    À Propos
                   </Link>
                 </li>
               </ul>

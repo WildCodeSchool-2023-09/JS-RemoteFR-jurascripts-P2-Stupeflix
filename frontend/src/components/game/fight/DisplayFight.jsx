@@ -3,10 +3,18 @@ import { useState } from "react";
 import Player from "./Player";
 import OpponentFight from "./OpponentFight";
 import Fight from "./Fight";
+import enemyData from "./enemysData";
 
 function DisplayFight() {
   const [fightEnd, setFightEnd] = useState(true);
   const [showFight, setShowFight] = useState(false);
+
+  const randomEnemy = (enemies) => {
+    const randomIndex = Math.floor(Math.random() * enemies.length);
+    return enemies[randomIndex];
+  };
+
+  const [enemy, setEnemy] = useState(randomEnemy(enemyData));
 
   return (
     <div className="container-game">
@@ -14,30 +22,36 @@ function DisplayFight() {
         <div className="fgt-div-1">
           <Player />
           {showFight ? (
-            <Fight />
+            <Fight enemy={enemy} setEnemy={setEnemy} />
           ) : (
             <div className="versus">
-              <h1 className="harry-potter-font fight-vs">VS</h1>
-              <button
-                type="button"
+              <h1
+                className="harry-potter-font fight-vs"
                 onClick={() => {
                   setFightEnd(false);
                   setTimeout(() => {
                     setShowFight(true);
                   }, 5000);
                 }}
+                onKeyDown={() => {
+                  setFightEnd(false);
+                  setTimeout(() => {
+                    setShowFight(true);
+                  }, 5000);
+                }}
+                role="presentation"
               >
-                Attaquer
-              </button>
+                VS
+              </h1>
             </div>
           )}
-          <OpponentFight />
+          <OpponentFight enemy={enemy} />
         </div>
       ) : (
         <div className="fgt-div-1">
           <Player />
-          <Fight />
-          <OpponentFight />
+          <Fight enemy={enemy} setEnemy={setEnemy} />
+          <OpponentFight enemy={enemy} />
         </div>
       )}
     </div>

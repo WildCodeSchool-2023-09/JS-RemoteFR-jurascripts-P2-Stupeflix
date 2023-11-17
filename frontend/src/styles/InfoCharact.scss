@@ -1,47 +1,60 @@
 .bsinfo {
   font-size: 2vw;
-  position: absolute;
-  top: 75%;
-  left: 2%;
+  position: fixed;
+  top: 1%;
+  right: 1%;
   border: 0.1rem orange solid;
   border-radius: 1rem;
-  padding: 0.3rem;
-  background-color: rgba(255, 255, 255, 0.421);
+  background-color: rgba(255, 255, 255, 0.908);
   cursor: pointer;
 
   @media screen and (max-width: 900px) {
-    top: 70%;
+    top: 0.5%;
+    font-size: 6vw;
   }
 
   &:hover {
     background-color: rgb(255, 184, 51);
   }
+
+  &:active {
+    background-color: rgb(255, 166, 0);
+  }
 }
 
 .div-info {
-  position: absolute;
-  top: 75%;
-  left: 2%;
+  position: fixed;
+  top: 77%;
+  right: 1%;
   width: 14%;
   border: 0.2rem var(--color) solid;
   border-radius: 0.3rem;
   padding: 0.3rem;
-  background-color: rgba(255, 255, 255, 0.421);
+  background-color: rgba(255, 255, 255, 0.908);
   color: black;
   @media screen and (max-width: 900px) {
-    top: 70%;
+    top: 76%;
+    width: 18%;
   }
 
   .bsdash {
     font-size: 1vw;
     border: 0.1rem orange solid;
     border-radius: 0.7rem;
-    padding: 0.1rem 0.3rem;
+    width: 10%;
     background-color: rgba(255, 255, 255, 0.421);
     cursor: pointer;
+    @media screen and (max-width: 900px) {
+      width: 30%;
+      font-size: 4vw;
+    }
 
     &:hover {
       background-color: rgb(255, 184, 51);
+    }
+
+    &:active {
+      background-color: rgb(255, 166, 0);
     }
   }
 
@@ -60,5 +73,8 @@
     @media screen and (max-width: 900px) {
       margin: 0;
     }
+  }
+  &:hover {
+    background-color: rgb(255, 255, 255);
   }
 }
